@@ -12,27 +12,27 @@ import {
 } from './types/sections';
 
 export const greetings: GreetingsType = {
-  name: 'Hanzla Tauqeer',
-  title: "Hi all, I'm Hanzla",
+  name: 'Prince Lee Nna',
+  title: "Hi all, I'm Prince Lee",
   description:
-    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
+    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, ether.js, and hardhat.",
   resumeLink:
-    'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
+    'https://drive.google.com/file/d/1m4GvKzSItfCAYDMPiY6iRduO9ANFwNVC/view?usp=sharing',
 };
 
 export const openSource = {
-  githubUserName: '1hanzla100',
+  githubUserName: 'amazingprincelee',
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
   url: 'https://1hanzla100.github.io/',
-  linkedin: 'https://www.linkedin.com/in/1hanzla100/',
-  github: 'https://github.com/1hanzla100',
-  instagram: 'https://www.instagram.com/__hanzla100',
-  facebook: 'https://www.facebook.com/1hanzla100',
-  twitter: 'https://twitter.com/1hanzla100',
+  linkedin: 'https://www.linkedin.com/in/amazingprincelee',
+  github: 'https://github.com/amazingprincelee',
+  instagram: 'https://www.instagram.com/amazingprincelee',
+  facebook: 'https://web.facebook.com/amazingprincelee',
+  twitter: 'https://twitter.com/amazinprincelee',
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -157,14 +157,14 @@ export const skillsSection: SkillsSectionType = {
           '⚡ Experience in developing Smart Contract using Solidity & Ethereum'
         ),
         emoji(
-          '⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura'
+          '⚡ Building Scripts for automated testing & deployment of Smart Contracts'
         ),
         emoji(
           '⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles'
         ),
         emoji('⚡ Developing NFT Smart Contracts using ERC-721 Token Standard'),
         emoji(
-          '⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS'
+          '⚡ Building Dapps with React.js/nextjs & Solidity using Web3.js/ether.js, '
         ),
       ],
       softwareSkills: [
@@ -204,56 +204,71 @@ export const SkillBars: SkillBarsType[] = [
   },
   {
     Stack: 'Programming',
-    progressPercentage: '60',
+    progressPercentage: '80',
+  },
+  {
+    Stack: 'Dapps',
+    progressPercentage: '90',
   },
 ];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'Harvard University',
-    subHeader: 'Master of Science in Computer Science',
-    duration: 'September 2017 - April 2019',
-    desc: 'Participated in the research of XXX and published 3 papers.',
-    grade: 'Grade A',
+    schoolName: 'Liverpool John Moores University',
+    subHeader: 'B.Eng in Electronics and Control Systems',
+    duration: 'September 2011 - Feb 2013',
+    desc: 'interconnection of devices that influences the behaviour of other devices or systems.',
+    grade: 'Grade B',
     descBullets: [
-      'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      'Proficient in programming languages such as C, C++, Python, and MATLAB for control system design and analysis',
+      'Designed and implemented closed-loop control systems for specific applications.',
+    ],
+  },
+  {
+    schoolName: 'Institut Megatech Malaysia',
+    subHeader: 'Advance Deploma in Electrical & Electronics Engr.',
+    duration: 'June 2006 - December 2011',
+    desc: 'design and develop complex electrical systems and electronic components',
+    grade: 'Grade B',
+    descBullets: [
+      'Skilled in using lab equipment such as oscilloscopes, multimeters, and function generators for testing and troubleshooting.',
+      'Designed and optimized power distribution systems for specific applications',
     ],
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Frontend Developer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Apr 2022 – Jun 2022',
-    desc: 'I worked as frontend web developer to design web based admin dashboards for mulitple apps using Django, Bootstrap, jQuery, Chart.js and some other libraries.',
+    role: 'Lead Developer/Founder',
+    company: 'Winbulk',
+    companyLogo: '/img/icons/common/winbulk.png',
+    date: 'June 2023 - Present',
+    desc: 'I am the visionary behind the project, responsible for generating innovative ideas and overseeing the entire development process.',
   },
   {
-    role: 'API Engineer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Jan 2022 – Mar 2022',
-    desc: 'I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.',
+    role: 'Site Engineering',
+    company: 'Newpal Nig. Limited',
+    companyLogo: '/img/icons/common/newpal.jpg',
+    date: 'Aug 2018 - Jan 2019',
+    desc: 'Site remediation and equipment maintenance and management/ Web Developer',
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     // ],
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Bleed-AI',
-    companyLogo: '/img/icons/common/bleedAI.jpg',
-    date: 'Sept 2021 - Oct 2021',
-    desc: 'Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.',
+    role: 'Lead Smart Contract and Dapp Developer',
+    company: 'George Stojkovic',
+    companyLogo: '/img/icons/common/goerge.jpg',
+    date: 'Jan 2023 - Jun 2023',
+    desc: 'As the lead Smart Contract and Dapp developer , my role was to oversee and lead the development of smart contracts and decentralized applications (Dapps) for the team.',
   },
   {
-    role: 'Backend Developer',
-    company: 'Wapidu',
-    companyLogo: '/img/icons/common/wapidu.jpg',
-    date: 'Sept 2021',
-    desc: 'Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.',
+    role: 'Director/Wed Developer',
+    company: 'BEDETELS Triumphant International Academy',
+    companyLogo: '/img/icons/common/bedetels.png',
+    date: 'Sept 2020 - Jul 2023',
+    desc: 'School administrator, In charge of the School ICT Department and Web development.',
   },
 ];
 
@@ -283,14 +298,14 @@ export const projects: ProjectType[] = [
 
 export const feedbacks: FeedbackType[] = [
   {
-    name: 'John Smith',
+    name: 'Bar. Evans Dule',
     feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
+      'Prince Lee Nna is an exceptional full-stack developer. His technical skills are exemplary, and he consistently delivers high-quality code. His ability to collaborate with the team, meet deadlines, and find creative solutions to complex problems is truly commendable. Prince dedication and professionalism make him a key asset to our organization. Keep up the fantastic work!.',
   },
   {
-    name: 'John Smith',
+    name: 'SomMoney',
     feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
+      'Prince Lee Nna is a stellar full-stack developer. His technical prowess and attention to detail shine through in his work. He consistently goes above and beyond to meet project goals and demonstrates a strong commitment to the team success. Prince ability to handle complex challenges and deliver results makes him a valuable asset to our organization. Keep up the fantastic work!',
   },
 ];
 
