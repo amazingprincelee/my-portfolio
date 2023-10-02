@@ -27,7 +27,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://1hanzla100.github.io/',
+  url: 'https://amazingprincelee.github.io/my-portfolio/',
   linkedin: 'https://www.linkedin.com/in/amazingprincelee',
   github: 'https://github.com/amazingprincelee',
   instagram: 'https://www.instagram.com/amazingprincelee',
