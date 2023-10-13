@@ -241,7 +241,7 @@ export const experience: ExperienceType[] = [
   {
     role: 'Lead Developer/Founder',
     company: 'Winbulk',
-    companyLogo: '/img/icons/common/winbulk.png',
+    companyLogo: '/img/icons/common/winbulk-logo.jpg',
     date: 'June 2023 - Present',
     desc: 'I am the visionary behind the project, responsible for generating innovative ideas and overseeing the entire development process.',
   },
