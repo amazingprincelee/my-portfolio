@@ -274,25 +274,26 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'Developer-portfolio',
-    desc: 'Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.',
-    github: 'https://github.com/1hanzla100/developer-portfolio',
-    link: 'https://developer-portfolio-1hanzla100.vercel.app/',
+    name: 'WinBulk',
+    desc: 'Winbulk is a decentralized application (Dapp) meticulously crafted using a stack of web technologies, including HTML, CSS, JavaScript, TypeScript, React, and Next.js. This sophisticated Dapp offers three distinct utilities, thoughtfully implemented through Solidity and Ethereum development frameworks.',
+    github: 'https://github.com/amazingprincelee/winbulk-main',
+    link: 'https://www.winbulk.com/',
   },
   {
-    name: 'AtlasMart',
-    desc: 'With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.',
-    github: 'https://github.com/1hanzla100/Django-React-Marketplace',
+    name: 'Newage Staking',
+    desc: 'The Newage Staking Dapp represents a decentralized application meticulously deployed on the Polygon network. It seamlessly interfaces with a frontend user interface constructed using the Next.js framework. This harmonious integration underscores our commitment to providing efficient and user-friendly blockchain solutions.',
+    link: 'https://www.newagecoin.cash/',
   },
   {
-    name: 'Technota (Forum)',
-    desc: 'Get hands-on experience in technical skills with Technota',
-    github: 'https://github.com/1hanzla100/django-react-forum',
+    name: 'Burn Dashboard',
+    desc: 'The Burndash is an Ethereum project designed to enable users to monitor token burn processes effectively. It achieves this by fetching data from Etherscan API endpoints, providing users with real-time insights into the burning activities associated with specific tokens',
+    github: 'https://github.com/amazingprincelee/1776-burn-dashboard',
   },
   {
-    name: 'Shopaza (Ecommerce)',
-    desc: 'Now your reach to all your favorite entertainment and luxury items is just one touch apart',
-    github: 'https://github.com/1hanzla100/Django-ecommerce',
+    name: 'Voting App',
+    desc: 'The Voting App project is an advanced Next.js application designed to facilitate secure and transparent voting processes. By utilizing Next.js, it offers a user-friendly frontend interface that ensures a seamless and accessible voting experience for users',
+    github: 'https://github.com/amazingprincelee/voters-app',
+    link: 'https://voting-app-project.netlify.app/
   },
 ];
 
