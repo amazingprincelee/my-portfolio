@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
   title: "Hi all, I'm Prince Lee",
   description:
-    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, ether.js, and hardhat.",
+    "Im a professional full stack web developer with 8years or 10 years of experience in web applications. My expertise lies in using python Django, React.js, Next.js for Web development and Solidity, Web3.js, either.js, hardhart for Blockchain development on etherum.",
   resumeLink:
     'https://drive.google.com/file/d/1m4GvKzSItfCAYDMPiY6iRduO9ANFwNVC/view?usp=sharing',
 };
@@ -37,7 +37,7 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  subTitle: 'Professional Full stack Developer who has the ability to work on every Tech Stack',
   data: [
     {
       title: 'Full Stack Development',
@@ -97,7 +97,7 @@ export const skillsSection: SkillsSectionType = {
       title: 'Cloud Infra-Architecture',
       lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
       skills: [
-        emoji('⚡ Experience of working on multiple cloud platforms'),
+        emoji('⚡ Experienced in working on multiple cloud platforms'),
         emoji(
           '⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases'
         ),
@@ -154,15 +154,15 @@ export const skillsSection: SkillsSectionType = {
       lottieAnimationFile: '/lottie/skills/ethereum.json', // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          '⚡ Experience in developing Smart Contract using Solidity & Ethereum'
+          '⚡ Experienced in developing Smart Contract using Solidity & Ethereum'
         ),
         emoji(
-          '⚡ Building Scripts for automated testing & deployment of Smart Contracts'
+          '⚡ Expert in building scripts for automated testing & deployment of Smart Contracts'
         ),
         emoji(
-          '⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles'
+          '⚡ Experienced in using Openzeppelin Smart Contract Standards & Chainlink Oracles'
         ),
-        emoji('⚡ Developing NFT Smart Contracts using ERC-721 Token Standard'),
+        emoji('⚡ Expert in developing NFT Smart Contracts using ERC-721 Token Standard'),
         emoji(
           '⚡ Building Dapps with React.js/nextjs & Solidity using Web3.js/ether.js, '
         ),
@@ -274,7 +274,7 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'developer-portfolio',
+    name: 'Developer-portfolio',
     desc: 'Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.',
     github: 'https://github.com/1hanzla100/developer-portfolio',
     link: 'https://developer-portfolio-1hanzla100.vercel.app/',
