@@ -314,19 +314,19 @@ export const showContactUs: boolean = true;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Hanzla Tauqeer',
+  title: 'Prince Lee',
   description:
     'A passionate Full Stack Web Developer and Blockchain Developer.',
   author: 'Hanzla Tauqeer',
-  image: 'https://avatars3.githubusercontent.com/u/59178380?v=4',
-  url: 'https://developer-portfolio-1hanzla100.vercel.app',
+  image: 'https://drive.google.com/file/d/1hSr1as2F9jfGWvjF12LybdeOSn73lhVK/view?usp=sharing',
+  url: 'https://my-portfolio-4try7vpcq-amazingprincelee.vercel.app/',
   keywords: [
-    'Hanzla',
-    'Hanzla Tauqeer',
-    '@1hanzla100',
-    '1hanzla100',
+    'princelee',
+    'Prince Lee',
+    '@amazingprincelee',
+    'amazingprincelee',
     'Portfolio',
-    'Hanzla Portfolio ',
-    'Hanzla Tauqeer Portfolio',
+    'Prince Lee Portfolio ',
+    'Prince Portfolio',
   ],
 };
