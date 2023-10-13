@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
   title: "Hi all, I'm Prince Lee",
   description:
-    "Im a professional full stack web developer with 6 years of experience in web applications. My expertise lies in using python Django, React.js, Next.js for Web development and Solidity, Web3.js, either.js, hardhart for Blockchain development on ethereum.",
+    "I'm a professional Full-Stack Web Developer with six years of experience. My skills encompass Python, Django, React.js, Next.js for web development, and Solidity, Web3.js, Ether.js, and Hardhat for Ethereum blockchain development.",
   resumeLink:
     'https://drive.google.com/file/d/1m4GvKzSItfCAYDMPiY6iRduO9ANFwNVC/view?usp=sharing',
 };
@@ -37,7 +37,7 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
-  subTitle: 'Professional Full stack Developer who has the ability to work on every Tech Stack',
+  subTitle: 'Experienced Full-Stack Developer with a comprehensive skill set capable of working across a wide range of technology stacks.',
   data: [
     {
       title: 'Full Stack Development',
