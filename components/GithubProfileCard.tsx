@@ -16,13 +16,12 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
                 alt=""
                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
               />
+              <h2 className='text-white text-center'>Prince Lee Nna</h2>
             </Col>
             <Col lg="8" className="order-lg-1">
-          <h className="text-white">Reach Out to me!</h2>
-              <h2 className="text-white">Reach Out to me!</h2>
+              <h2 className="text-white">For project discussion and collaboration?</h2>
               <p className="lead text-white mt-3">
-                DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR
-                ALL
+                Hit me up!
               </p>
               <p className="text-white mt-3">{bio}</p>
               <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
