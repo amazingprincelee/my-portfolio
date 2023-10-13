@@ -293,7 +293,7 @@ export const projects: ProjectType[] = [
     name: 'Voting App',
     desc: 'The Voting App project is an advanced Next.js application designed to facilitate secure and transparent voting processes. By utilizing Next.js, it offers a user-friendly frontend interface that ensures a seamless and accessible voting experience for users',
     github: 'https://github.com/amazingprincelee/voters-app',
-    link: 'https://voting-app-project.netlify.app/
+    link: 'https://voting-app-project.netlify.app/',
   },
 ];
 
