@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
   title: "Hi all, I'm Prince Lee",
   description:
-    "Im a professional full stack web developer with 8years or 10 years of experience in web applications. My expertise lies in using python Django, React.js, Next.js for Web development and Solidity, Web3.js, either.js, hardhart for Blockchain development on etherum.",
+    "Im a professional full stack web developer with 8 years of experience in web applications. My expertise lies in using python Django, React.js, Next.js for Web development and Solidity, Web3.js, either.js, hardhart for Blockchain development on etherum.",
   resumeLink:
     'https://drive.google.com/file/d/1m4GvKzSItfCAYDMPiY6iRduO9ANFwNVC/view?usp=sharing',
 };
