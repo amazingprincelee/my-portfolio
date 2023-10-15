@@ -21,7 +21,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
             </Col>
             <Col lg="8" className="order-lg-1">
               <h2 className="text-white">For project discussion and collaboration?</h2>
-              <p className="lead text-white mt-3">
+              <p className="lead text-white mt-3 mb-5">
                 Hit me up!
               </p>
               <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
