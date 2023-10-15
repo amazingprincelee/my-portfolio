@@ -17,7 +17,7 @@ export const greetings: GreetingsType = {
   description:
     "I'm a professional Full-Stack Web Developer with six years of experience. My skills encompass Python, Django, React.js, Next.js, Nodejs for web development, and Solidity, Web3.js, Ether.js, and Hardhat for Ethereum blockchain development.",
   resumeLink:
-    'https://drive.google.com/file/d/1m4GvKzSItfCAYDMPiY6iRduO9ANFwNVC/view?usp=sharing',
+    'https://drive.google.com/file/d/1mZMn7GYGrA5V47T-lFmrRoSqoYLDYRPu/view?usp=sharing',
 };
 
 export const openSource = {
