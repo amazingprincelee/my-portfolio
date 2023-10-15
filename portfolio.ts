@@ -318,7 +318,7 @@ export const seoData: SEODataType = {
   title: 'Prince Lee',
   description:
     'A passionate Full Stack Web Developer and Blockchain Developer.',
-  author: 'Hanzla Tauqeer',
+  author: 'Prince Lee',
   image: 'https://drive.google.com/file/d/1hSr1as2F9jfGWvjF12LybdeOSn73lhVK/view?usp=sharing',
   url: 'https://my-portfolio-4try7vpcq-amazingprincelee.vercel.app/',
   keywords: [
