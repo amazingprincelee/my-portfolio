@@ -203,7 +203,7 @@ export const SkillBars: SkillBarsType[] = [
     progressPercentage: '70',
   },
   {
-    Stack: 'Programming',
+    Stack: 'Blockchain',
     progressPercentage: '80',
   },
   {
