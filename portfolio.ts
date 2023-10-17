@@ -91,6 +91,10 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Yarn',
           iconifyTag: 'logos:yarn',
         },
+        {
+          skillName: 'Node',
+          iconifyTag: 'logos:node',
+        },
       ],
     },
     {
@@ -111,10 +115,7 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'AWS',
           iconifyTag: 'logos:aws',
         },
-        {
-          skillName: 'Azure',
-          iconifyTag: 'logos:microsoft-azure',
-        },
+      
         {
           skillName: 'Heroku',
           iconifyTag: 'logos:heroku-icon',
@@ -127,26 +128,14 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Github',
           iconifyTag: 'akar-icons:github-fill',
         },
-        {
-          skillName: 'Docker',
-          iconifyTag: 'logos:docker-icon',
-        },
+       
         {
           skillName: 'Github Actions',
           iconifyTag: 'logos:github-actions',
         },
-        {
-          skillName: 'Cloudinary',
-          iconifyTag: 'logos:cloudinary',
-        },
-        {
-          skillName: 'Nginx',
-          iconifyTag: 'logos:nginx',
-        },
-        {
-          skillName: 'Sentry',
-          iconifyTag: 'logos:sentry-icon',
-        },
+       
+       
+       
       ],
     },
     {
@@ -160,7 +149,7 @@ export const skillsSection: SkillsSectionType = {
           '⚡ Expert in building scripts for automated testing & deployment of Smart Contracts'
         ),
         emoji(
-          '⚡ Experienced in using Openzeppelin Smart Contract Standards & Chainlink Oracles'
+          '⚡ Experienced in using Openzeppelin Smart Contract Standards'
         ),
         emoji('⚡ Expert in developing NFT Smart Contracts using ERC-721 Token Standard'),
         emoji(
@@ -220,8 +209,8 @@ export const educationInfo: EducationType[] = [
     desc: 'interconnection of devices that influences the behaviour of other devices or systems.',
     grade: 'Grade B',
     descBullets: [
-      'Proficient in programming languages such as C, C++, Python, and MATLAB for control system design and analysis',
-      'Designed and implemented closed-loop control systems for specific applications.',
+      'Proficient in programming languages such as javaScript, Nodejs,Python, and Solidity for smart contract and blockchain development',
+      'Designed and implemented responsive functions for specific applications.',
     ],
   },
   {
