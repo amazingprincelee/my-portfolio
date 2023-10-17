@@ -93,7 +93,7 @@ export const skillsSection: SkillsSectionType = {
         },
         {
           skillName: 'Node',
-          iconifyTag: 'logos:node-icon',
+          iconifyTag: 'vscode-icons:file-type-node',
         },
       ],
     },
