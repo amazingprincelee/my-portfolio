@@ -93,7 +93,7 @@ export const skillsSection: SkillsSectionType = {
         },
         {
           skillName: 'Node',
-          iconifyTag: 'logos:node',
+          iconifyTag: 'logos:node-icon',
         },
       ],
     },
