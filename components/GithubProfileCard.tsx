@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Row, Container } from 'reactstrap';
 import { GithubUserType } from '../types';
 import SocialLinks from './SocialLinks';
+import Contact from '../components/ContactUs'
 
 const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
   return (
@@ -20,10 +21,12 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
               <p className="text-white text-center">{bio}</p>
             </Col>
             <Col lg="8" className="order-lg-1">
-              <h2 className="text-white text-center">For project discussion and collaboration?</h2>
-              <p className="lead text-white text-center mt-3 mb-5">
+              <h2 className="text-white">For project discussion and collaboration?</h2>
+              <p className="lead text-white mt-3">
                 Hit me up!
               </p>
+              <Contact />
+              
               <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
                 <i className="ni ni-pin-3 text-info mr-2" />
                 {location}
