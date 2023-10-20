@@ -92,9 +92,9 @@ export const ContactUs = () => {
                 <Card className="bg-gradient-secondary shadow">
                   <CardBody className="p-lg-5">
                     <h4 className="mb-1">Your project success is my priority</h4>
-                    <h4 className="mt-0">
+                    <p className="mt-0">
                       Let's discuss!
-                    </h4>
+                    </p>
                     <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
                         <InputGroupAddon addonType="prepend">
