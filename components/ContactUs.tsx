@@ -93,7 +93,7 @@ export const ContactUs = () => {
                   <CardBody className="p-lg-5">
                     <h4 className="mb-1">Your project success is my priority. </h4>
                     <p className="mt-0">
-                      Reach out to me using the form below.
+                     Let's discuss!.
                     </p>
                     <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
