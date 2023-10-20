@@ -77,7 +77,7 @@ export const ContactUs = () => {
 
   return (
     <>
-      <section className="section section-lg section-shaped">
+      <section className="section  section-shaped">
         <form ref={form} onSubmit={sendEmail}>
           {alert && (
             <Alert
@@ -87,13 +87,13 @@ export const ContactUs = () => {
             />
           )}
           <Container>
-            <Row className="justify-content-center">
+            <Row className="">
               <Col lg="8">
                 <Card className="bg-gradient-secondary shadow">
                   <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Your project success is my priority</h4>
+                    <h4 className="mb-1">Want to work with me?</h4>
                     <p className="mt-0">
-                      Let's discuss!
+                      Reach out to me using the form below.
                     </p>
                     <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
