@@ -279,10 +279,10 @@ export const projects: ProjectType[] = [
     github: 'https://github.com/amazingprincelee/1776-burn-dashboard',
   },
   {
-    name: 'Voting App',
+    name: 'ToDo list',
     desc: 'The Voting App project is an advanced Next.js application designed to facilitate secure and transparent voting processes. By utilizing Next.js, it offers a user-friendly frontend interface that ensures a seamless and accessible voting experience for users',
-    github: 'https://github.com/amazingprincelee/voters-app',
-    link: 'https://voting-app-project.netlify.app/',
+    github: 'https://github.com/amazingprincelee/react-todo-list/',
+    link: 'https://react-todo-list-one-ecru.vercel.app/',
   },
 ];
 
