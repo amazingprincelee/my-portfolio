@@ -17,6 +17,8 @@ import {
   Col,
 } from 'reactstrap';
 
+const letUsDiscuss = "Let's discuss!"
+
 export const ContactUs = () => {
   const form = useRef<HTMLFormElement>(null);
   const [alert, setAlert] = useState<{
@@ -93,7 +95,7 @@ export const ContactUs = () => {
                   <CardBody className="p-lg-5">
                     <h4 className="mb-1">Your project success is my priority. </h4>
                     <p className="mt-0">
-                     Let us discuss.
+                      {letUsDiscuss}
                     </p>
                     <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
