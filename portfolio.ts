@@ -133,6 +133,10 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Github Actions',
           iconifyTag: 'logos:github-actions',
         },
+        {
+          skillName: 'Github Actions',
+          iconifyTag: 'devicon:mongodb-wordmark',
+        },
        
        
        
