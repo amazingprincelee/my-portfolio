@@ -280,7 +280,7 @@ export const projects: ProjectType[] = [
   },
   {
     name: 'ToDo list',
-    desc: 'The Voting App project is an advanced Next.js application designed to facilitate secure and transparent voting processes. By utilizing Next.js, it offers a user-friendly frontend interface that ensures a seamless and accessible voting experience for users',
+    desc: 'This project was developed using React, providing a user-friendly platform for adding and effortlessly removing To-Do items with a simple click. The primary objective is to exercise assess and enhance proficiency in managing component tree and utilizing props effectively.',
     github: 'https://github.com/amazingprincelee/react-todo-list/',
     link: 'https://react-todo-list-one-ecru.vercel.app/',
   },
