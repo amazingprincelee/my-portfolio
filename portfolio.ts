@@ -228,11 +228,11 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Lead Developer/Founder',
+    role: 'Lead Developer',
     company: 'Winbulk',
     companyLogo: '/img/icons/common/winbulk-logo.jpg',
     date: 'June 2023 - Present',
-    desc: 'I am the visionary behind the project, responsible for generating innovative ideas and overseeing the entire development process.',
+    desc: 'Lead the design and architecture of software projects, making decisions on technologies, frameworks, and patterns.',
   },
   {
     role: 'Site Engineering',
