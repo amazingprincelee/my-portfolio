@@ -220,7 +220,7 @@ export const educationInfo: EducationType[] = [
   {
     schoolName: 'Institut Megatech Malaysia',
     subHeader: 'Advance Deploma in Electrical & Electronics Engr.',
-    duration: 'June 2006 - December 2011',
+    duration: 'June 2006 - September 2011',
     desc: 'design and develop complex electrical systems and electronic components',
     grade: 'Grade B',
     descBullets: [
@@ -235,7 +235,7 @@ export const experience: ExperienceType[] = [
     role: 'Lead Developer',
     company: 'Winbulk',
     companyLogo: '/img/icons/common/winbulk-logo.jpg',
-    date: 'June 2023 - Present',
+    date: 'Jul 2023 - Present',
     desc: 'Lead the design and architecture of software projects, making decisions on technologies, frameworks, and patterns.',
   },
   {
@@ -253,14 +253,14 @@ export const experience: ExperienceType[] = [
     role: 'Lead Smart Contract and Dapp Developer',
     company: 'George Stojkovic',
     companyLogo: '/img/icons/common/goerge.jpg',
-    date: 'Jan 2023 - Jun 2023',
+    date: 'Jan 2023 - Jul 2023',
     desc: 'As the lead Smart Contract and Dapp developer , my role was to oversee and lead the development of smart contracts and decentralized applications (Dapps) for the team.',
   },
   {
-    role: 'Director/Wed Developer',
+    role: 'Director/Web Developer',
     company: 'BEDETELS Triumphant International Academy',
     companyLogo: '/img/icons/common/bedetels.png',
-    date: 'Sept 2020 - Jul 2023',
+    date: 'Sept 2020 - Jan 2023',
     desc: 'School administrator, In charge of the School ICT Department and Web development.',
   },
 ];
