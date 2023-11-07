@@ -267,10 +267,10 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'WinBulk',
-    desc: 'Winbulk is a decentralized application (Dapp) meticulously crafted using a stack of web technologies, including HTML, CSS, JavaScript, TypeScript, React, and Next.js. This sophisticated Dapp offers three distinct utilities, thoughtfully implemented through Solidity and Ethereum development frameworks.',
-    github: 'https://github.com/amazingprincelee/winbulk-main',
-    link: 'https://www.winbulk.com/',
+    name: 'RoboAdvisor',
+    desc: 'This project is a thorough demonstration of full-stack development skills, incorporating a range of technologies. It uses Atlas for cloud-based data storage, Node.js and Express for creating the backend, and sets up RESTful APIs for communication between the server and client. The frontend is built with React, ensuring a dynamic interface, while Bootstrap is applied for responsive styling. The project goes beyond coding to include deployment and database management, offering a complete full-stack development experience.',
+    github: 'https://github.com/amazingprincelee/nigerian-robo-advisor',
+    link: 'https://nigerian-robo-advisor.vercel.app/',
   },
   {
     name: 'Newage Staking',
