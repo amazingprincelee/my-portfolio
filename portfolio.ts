@@ -278,9 +278,10 @@ export const projects: ProjectType[] = [
     link: 'https://www.newagecoin.cash/',
   },
   {
-    name: 'Burn Dashboard',
-    desc: 'The Burndash is an Ethereum project designed to enable users to monitor token burn processes effectively. It achieves this by fetching data from Etherscan API endpoints, providing users with real-time insights into the burning activities associated with specific tokens',
-    github: 'https://github.com/amazingprincelee/1776-burn-dashboard',
+    name: 'ClassNotes',
+    desc: 'This React application serves as a platform for both students and teachers to upload and share course materials. It is designed to streamline the process of sharing educational resources, making it easily accessible for all users involved.',
+    github: 'https://github.com/amazingprincelee/class-note',
+    link: 'https://class-note-dusky.vercel.app/login',
   },
   {
     name: 'ToDo list',
