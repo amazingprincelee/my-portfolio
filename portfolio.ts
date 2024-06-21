@@ -231,24 +231,23 @@ export const educationInfo: EducationType[] = [
 ];
 
 export const experience: ExperienceType[] = [
+
+
   {
-    role: 'Lead Developer',
-    company: 'Winbulk',
-    companyLogo: '/img/icons/common/winbulk-logo.jpg',
-    date: 'Jul 2023 - Present',
-    desc: 'Lead the design and architecture of software projects, making decisions on technologies, frameworks, and patterns.',
+    role: 'FullStack Developer',
+    company: 'Phylee Travel and Tours Limited',
+    companyLogo: '/img/icons/common/phylee.jpg',
+    date: 'May 2024 - Present',
+    desc: 'I am the Full Stack developer, project manager, and software architect of this organization. Using the MERN stack, I designed and developed both the frontend and backend.',
   },
   {
-    role: 'Site Engineering',
-    company: 'Newpal Nig. Limited',
-    companyLogo: '/img/icons/common/newpal.jpg',
-    date: 'Aug 2018 - Jan 2019',
-    desc: 'Site remediation and equipment maintenance and management/ Web Developer',
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
+    role: 'Back End Developer / project manager',
+    company: 'First Start Consults',
+    companyLogo: '/img/icons/common/first-star.png',
+    date: 'Dec 2023 - Present',
+    desc: 'I specialize in backend development using the MERN stack and have led the design and architecture of various software projects. I make critical decisions on technologies, frameworks, and patterns to ensure robust and efficient solutions.',
   },
+  
   {
     role: 'Lead Smart Contract and Dapp Developer',
     company: 'George Stojkovic',
@@ -267,22 +266,23 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'RoboAdvisor',
+    name: 'Phylee Travel and Tours Limited',
     desc: 'This project is a thorough demonstration of full-stack development skills, incorporating a range of technologies. It uses Atlas for cloud-based data storage, Node.js and Express for creating the backend, and sets up RESTful APIs for communication between the server and client. The frontend is built with React, ensuring a dynamic interface. ',
-    github: 'https://github.com/amazingprincelee/nigerian-robo-advisor',
-    link: 'https://nigerian-robo-advisor.vercel.app/',
+    github: 'https://github.com/amazingprincelee/phyleeTravels-FrontEnd',
+    link: 'https://phyleejourneys.com/',
+  },
+
+  {
+    name: 'Mobile Doctor App',
+    desc: '"Mobile Doctor is a health provider mobile application developed by First Star Consult Limited, where I currently manage the application and serve as the lead developer."',
+    link: 'https://firststarconsults.online/',
   },
   {
     name: 'Newage Staking',
     desc: 'The Newage Staking Dapp represents a decentralized application meticulously deployed on the Polygon network. It seamlessly interfaces with a frontend user interface constructed using the Next.js framework. This harmonious integration underscores our commitment to providing efficient and user-friendly blockchain solutions.',
     link: 'https://www.newagecoin.cash/',
   },
-  {
-    name: 'ClassNotes',
-    desc: 'This React application serves as a platform for both students and teachers to upload and share course materials. It is designed to streamline the process of sharing educational resources, making it easily accessible for all users involved.',
-    github: 'https://github.com/amazingprincelee/class-note',
-    link: 'https://class-note-dusky.vercel.app/login',
-  },
+  
   {
     name: 'ToDo list',
     desc: 'This project was developed using React, providing a user-friendly platform for adding and effortlessly removing To-Do items with a simple click. The primary objective is to exercise assess and enhance proficiency in managing component tree and utilizing props effectively.',
