@@ -245,7 +245,7 @@ export const experience: ExperienceType[] = [
     company: 'First Start Consults',
     companyLogo: '/img/icons/common/first-star.png',
     date: 'Dec 2023 - Present',
-    desc: 'I specialize in backend development using the MERN stack and have led the design and architecture of various software projects. I make critical decisions on technologies, frameworks, and patterns to ensure robust and efficient solutions.',
+    desc: 'Mobile Doctor is a health provider mobile application developed by First Star Consult Limited. I oversee the application as both its manager and lead developer. I implemented the backend using Node.js and Express, supervised the Figma UI design, and developed the frontend using React Native.',
   },
   
   {
