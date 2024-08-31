@@ -307,21 +307,33 @@ export const feedbacks: FeedbackType[] = [
 // option to hide or show the ContactUs component
 export const showContactUs: boolean = true;
 
-// See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Prince Lee',
+  title: 'Prince Lee | Full Stack Developer & Freelancer',
   description:
-    'A passionate Full Stack Web Developer and Blockchain Developer.',
+    'Prince Lee is a versatile Full Stack Developer specializing in React, React Native, Node.js, Express.js, PostgreSQL, MongoDB, and more. Offering exceptional web and mobile app development services.',
   author: 'Prince Lee',
-  image: 'https://drive.google.com/file/d/1hSr1as2F9jfGWvjF12LybdeOSn73lhVK/view?usp=sharing',
-  url: 'https://my-portfolio-4try7vpcq-amazingprincelee.vercel.app/',
+  image: 'https://princelee.pro/images/nnaprince.jpg',
+  url: 'https://princelee.pro',
   keywords: [
-    'princelee',
     'Prince Lee',
-    '@amazingprincelee',
-    'amazingprincelee',
+    'Full Stack Developer',
+    'React Developer',
+    'React Native Developer',
+    'Node.js Developer',
+    'Express.js Developer',
+    'Freelance Developer',
+    'Web Developer',
+    'Mobile App Developer',
+    'PostgreSQL',
+    'MongoDB',
+    'NestJS',
+    'TypeScript',
+    'Next.js',
+    'Bootstrap',
+    'Tailwind CSS',
+    'RESTful API',
+    'JavaScript Developer',
     'Portfolio',
-    'Prince Lee Portfolio ',
-    'Prince Portfolio',
+    'Prince Lee Portfolio',
   ],
 };
