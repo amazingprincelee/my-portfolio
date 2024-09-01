@@ -15,9 +15,8 @@ export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
   title: "Hi all, I'm Prince Lee",
   description:
-    "I'm a professional Full-Stack Web Developer with years of experience. My skills encompass javaScript, React.js, Next.js, SQL, REST:API, PostgreSQL, MongoDB, Nodejs and Solidity, Web3.js, Ether.js, and Hardhat for Ethereum blockchain development.",
-  resumeLink:
-    'https://drive.google.com/file/d/1mZMn7GYGrA5V47T-lFmrRoSqoYLDYRPu/view?usp=sharing',
+    'I am a passionate Full-Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. With a strong foundation in both frontend and backend technologies, I bring a comprehensive approach to developing scalable and maintainable solutions',
+  resumeLink: 'https://princelee.pro/documents/CV_Prince_Nna.pdf',
 };
 
 export const openSource = {
@@ -27,17 +26,17 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://amazingprincelee.github.io/my-portfolio/',
+  url: 'https://princelee.pro/',
   linkedin: 'https://www.linkedin.com/in/amazingprincelee',
   github: 'https://github.com/amazingprincelee',
-  instagram: 'https://www.instagram.com/amazingprincelee',
-  facebook: 'https://web.facebook.com/amazingprincelee',
-  twitter: 'https://twitter.com/amazinprincelee',
+  facebook: 'https://www.facebook.com/amazingprincelee1/',
+  discord: 'https://discord.com/users/amazingprincelee',
 };
 
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
-  subTitle: 'Experienced Full-Stack Developer with a comprehensive skill set capable of working across a wide range of technology stacks.',
+  subTitle:
+    'Experienced Full-Stack Developer with a comprehensive skill set capable of working across a wide range of technology stacks.',
   data: [
     {
       title: 'Full Stack Development',
@@ -48,6 +47,8 @@ export const skillsSection: SkillsSectionType = {
         ),
         emoji('⚡ Building responsive static websites using Next.js'),
         emoji('⚡ Building RESTful APIs with Express & Nodejs'),
+        emoji('⚡ Crafting server-side applications and APIs with NestJS for scalable solutions'),
+        emoji('⚡ Managing and integrating databases like MongoDB, PostgreSQL, and MySQL'),
       ],
       softwareSkills: [
         {
@@ -97,111 +98,27 @@ export const skillsSection: SkillsSectionType = {
         },
       ],
     },
-    {
-      title: 'Cloud Infra-Architecture',
-      lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji('⚡ Experienced in working on multiple cloud platforms'),
-        emoji(
-          '⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases'
-        ),
-        emoji(
-          '⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions'
-        ),
-      ],
-      softwareSkills: [
-        // ? Check README To get icon details
-        {
-          skillName: 'AWS',
-          iconifyTag: 'logos:aws',
-        },
-      
-        {
-          skillName: 'Heroku',
-          iconifyTag: 'logos:heroku-icon',
-        },
-        {
-          skillName: 'PostgreSQL',
-          iconifyTag: 'logos:postgresql',
-        },
-        {
-          skillName: 'Github',
-          iconifyTag: 'akar-icons:github-fill',
-        },
-       
-        {
-          skillName: 'Github Actions',
-          iconifyTag: 'logos:github-actions',
-        },
-        {
-          skillName: 'Github Actions',
-          iconifyTag: 'devicon:mongodb-wordmark',
-        },
-       
-       
-       
-      ],
-    },
-    {
-      title: 'Blockchain',
-      lottieAnimationFile: '/lottie/skills/ethereum.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          '⚡ Experienced in developing Smart Contract using Solidity & Ethereum'
-        ),
-        emoji(
-          '⚡ Expert in building scripts for automated testing & deployment of Smart Contracts'
-        ),
-        emoji(
-          '⚡ Experienced in using Openzeppelin Smart Contract Standards'
-        ),
-        emoji('⚡ Expert in developing NFT Smart Contracts using ERC-721 Token Standard'),
-        emoji(
-          '⚡ Building Dapps with React.js/nextjs & Solidity using Web3.js/ether.js, '
-        ),
-      ],
-      softwareSkills: [
-        {
-          skillName: 'Ethereum',
-          iconifyTag: 'logos:ethereum',
-        },
-        {
-          skillName: 'Solidity',
-          iconifyTag: 'logos:solidity',
-        },
-        {
-          skillName: 'Web3js',
-          iconifyTag: 'logos:web3js',
-        },
-        {
-          skillName: 'Metamask',
-          iconifyTag: 'logos:metamask-icon',
-        },
-        {
-          skillName: 'Ganache',
-          iconifyTag: 'logos:ganache-icon',
-        },
-      ],
-    },
+    
+    
   ],
 };
 
 export const SkillBars: SkillBarsType[] = [
   {
     Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-    progressPercentage: '90', //Insert relative proficiency in percentage
+    progressPercentage: '80', //Insert relative proficiency in percentage
   },
   {
     Stack: 'Backend',
+    progressPercentage: '100',
+  },
+  {
+    Stack: 'Android',
+    progressPercentage: '95',
+  },
+  {
+    Stack: 'IOS',
     progressPercentage: '70',
-  },
-  {
-    Stack: 'Blockchain',
-    progressPercentage: '80',
-  },
-  {
-    Stack: 'Dapps',
-    progressPercentage: '90',
   },
 ];
 
@@ -231,8 +148,6 @@ export const educationInfo: EducationType[] = [
 ];
 
 export const experience: ExperienceType[] = [
-
-
   {
     role: 'FullStack Developer',
     company: 'Phylee Travel and Tours Limited',
@@ -247,7 +162,7 @@ export const experience: ExperienceType[] = [
     date: 'Dec 2023 - Present',
     desc: 'I specialize in backend development using the MERN stack and have led the design and architecture of various software projects. I make critical decisions on technologies, frameworks, and patterns to ensure robust and efficient solutions.',
   },
-  
+
   {
     role: 'Lead Smart Contract and Dapp Developer',
     company: 'George Stojkovic',
@@ -282,12 +197,12 @@ export const projects: ProjectType[] = [
     desc: 'The Newage Staking Dapp represents a decentralized application meticulously deployed on the Polygon network. It seamlessly interfaces with a frontend user interface constructed using the Next.js framework. This harmonious integration underscores our commitment to providing efficient and user-friendly blockchain solutions.',
     link: 'https://www.newagecoin.cash/',
   },
-  
+
   {
-    name: 'ToDo list',
-    desc: 'This project was developed using React, providing a user-friendly platform for adding and effortlessly removing To-Do items with a simple click. The primary objective is to exercise assess and enhance proficiency in managing component tree and utilizing props effectively.',
-    github: 'https://github.com/amazingprincelee/react-todo-list/',
-    link: 'https://react-todo-list-one-ecru.vercel.app/',
+    name: 'Nestjs Authentication and Communication',
+    desc: 'The project features a robust backend designed to handle user authentication and communication. It includes a secure and scalable email and password-based authentication system for managing user identities.',
+    github: 'https://github.com/amazingprincelee/nestjs-auth-systems',
+    
   },
 ];
 
