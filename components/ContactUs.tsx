@@ -1,13 +1,29 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Button, Card, CardBody, FormGroup, Input, InputGroupAddon, InputGroupText, InputGroup, Container, Row, Col } from 'reactstrap';
+import {
+  Button,
+  Card,
+  CardBody,
+  FormGroup,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
+} from 'reactstrap';
 import Alert from './Alerts';
 
 const letUsDiscuss = "Let's discuss!";
 
 export const ContactUs = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [alert, setAlert] = useState<{ color: string; icon: string; message: string; } | null>(null);
+  const [alert, setAlert] = useState<{
+    color: string;
+    icon: string;
+    message: string;
+  } | null>(null);
 
   const successAlert = {
     color: 'success',
@@ -23,34 +39,40 @@ export const ContactUs = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-  
-    if (emailJsServiceId && emailJsTemplateId && emailJsPublicKey && form.current) {
-      emailjs.sendForm(
-        emailJsServiceId,
-        emailJsTemplateId,
-        form.current,
-        emailJsPublicKey
-      ).then(
-        (result) => {
-          console.log(result.text);
-          setAlert(successAlert);
-          form.current.reset(); // Ensure the form resets after successful submission
-        },
-        (error) => {
-          console.log(error.text);
-          setAlert(errorAlert);
-        }
-      );
+
+    if (
+      emailJsServiceId &&
+      emailJsTemplateId &&
+      emailJsPublicKey &&
+      form.current
+    ) {
+      emailjs
+        .sendForm(
+          emailJsServiceId,
+          emailJsTemplateId,
+          form.current,
+          emailJsPublicKey
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setAlert(successAlert); // Set the success alert
+            (form.current as HTMLFormElement).reset();
+          },
+          (error) => {
+            console.log(error.text);
+            setAlert(errorAlert); // Set the error alert
+          }
+        );
     } else {
       console.error('Form reference is null or missing emailJS configuration');
-      setAlert(errorAlert);
+      setAlert(errorAlert); // Set the error alert if configurations are missing
     }
   };
-  
 
   return (
     <section className="section section-shaped py-5">
@@ -79,7 +101,7 @@ export const ContactUs = () => {
                       <Input
                         placeholder="Your name"
                         type="text"
-                        name="user_name"
+                        name="from_name" // Change to match the template
                         required
                       />
                     </InputGroup>
@@ -93,7 +115,7 @@ export const ContactUs = () => {
                       </InputGroupAddon>
                       <Input
                         placeholder="Email address"
-                        name="user_email"
+                        name="reply_to" // Change to match the template
                         type="email"
                         required
                       />
@@ -103,13 +125,14 @@ export const ContactUs = () => {
                     <Input
                       className="form-control-alternative"
                       cols="80"
-                      name="user_message"
+                      name="message" // Change to match the template
                       placeholder="Type a message..."
                       rows="4"
                       type="textarea"
                       required
                     />
                   </FormGroup>
+
                   <Button
                     block
                     className="btn-round"
@@ -127,7 +150,8 @@ export const ContactUs = () => {
             <div className="content-section p-4 rounded">
               <h4>For project discussion and collaboration?</h4>
               <p>
-                If you have any project or need more information, feel free to contact me through the form on the left or you can WhatsApp me.
+                If you have any project or need more information, feel free to
+                contact me through the form on the left or you can WhatsApp me.
               </p>
               <p>
                 <strong>WhatsApp:</strong> +234 803 542 1019
