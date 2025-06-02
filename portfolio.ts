@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi all, I'm Prince Lee",
   description:
     'I am a passionate Full-Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. With a strong foundation in both frontend and backend technologies, I bring a comprehensive approach to developing scalable and maintainable solutions',
-  resumeLink: 'https://drive.google.com/file/d/1_XhQHaqrLJRbotNbXcGbIjnQPnDqLka6/view?usp=sharing',
+  resumeLink: '/Prince_Lee_Nna_CV.pdf',
 };
 
 export const openSource = {
