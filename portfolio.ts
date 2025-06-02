@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi all, I'm Prince Lee",
   description:
     'I am a passionate Full-Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. With a strong foundation in both frontend and backend technologies, I bring a comprehensive approach to developing scalable and maintainable solutions',
-  resumeLink: 'https://princelee.pro/documents/CV_Prince_Nna.pdf',
+  resumeLink: 'https://drive.google.com/file/d/1_XhQHaqrLJRbotNbXcGbIjnQPnDqLka6/view?usp=sharing',
 };
 
 export const openSource = {
@@ -29,8 +29,11 @@ export const socialLinks: SocialLinksType = {
   url: 'https://princelee.pro/',
   linkedin: 'https://www.linkedin.com/in/amazingprincelee',
   github: 'https://github.com/amazingprincelee',
-  facebook: 'https://www.facebook.com/amazingprincelee1/',
-  discord: 'https://discord.com/users/amazingprincelee',
+  instagram: 'https://www.instagram.com/amazingprincelee/',
+  facebook: 'https://web.facebook.com/amazingprincelee/',
+  twitter: 'https://x.com/amazinprincelee',
+  youtube: 'https://www.youtube.com/@amazingprincelee',
+  tiktok: 'https://www.tiktok.com/@amazingprincelee'
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -40,15 +43,14 @@ export const skillsSection: SkillsSectionType = {
   data: [
     {
       title: 'Full Stack Development',
-      lottieAnimationFile: '/lottie/skills/fullstack.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: '/lottie/skills/fullstack.json',
       skills: [
-        emoji(
-          '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
-        ),
+        emoji('⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'),
         emoji('⚡ Building responsive static websites using Next.js'),
         emoji('⚡ Building RESTful APIs with Express & Nodejs'),
-        emoji('⚡ Crafting server-side applications and APIs with NestJS for scalable solutions'),
-        emoji('⚡ Managing and integrating databases like MongoDB, PostgreSQL, and MySQL'),
+        emoji('⚡ Developing cross-platform mobile applications with React Native'),
+        emoji('⚡ Creating intuitive UI/UX designs using Figma and Photoshop'),
+        emoji('⚡ Managing state efficiently with Redux Toolkit'),
       ],
       softwareSkills: [
         {
@@ -93,13 +95,27 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'logos:yarn',
         },
         {
-          skillName: 'Node',
-          iconifyTag: 'vscode-icons:file-type-node',
+          skillName: 'TypeScript',
+          iconifyTag: 'logos:typescript-icon',
+        },
+        {
+          skillName: 'React Native',
+          iconifyTag: 'logos:react',
+        },
+        {
+          skillName: 'Redux Toolkit',
+          iconifyTag: 'logos:redux',
+        },
+        {
+          skillName: 'Figma',
+          iconifyTag: 'logos:figma',
+        },
+        {
+          skillName: 'Photoshop',
+          iconifyTag: 'logos:adobe-photoshop',
         },
       ],
     },
-    
-    
   ],
 };
 
@@ -186,36 +202,33 @@ export const projects: ProjectType[] = [
     github: 'https://github.com/amazingprincelee/phyleeTravels-FrontEnd',
     link: 'https://phyleejourneys.com/',
   },
-
   {
     name: 'Mobile Doctor App',
     desc: 'Mobile Doctor is a health provider mobile application developed by First Star Consult Limited. I oversee the application as both its manager and lead developer. I implemented the backend using Node.js and Express, supervised the Figma UI design, and developed the frontend using React Native.',
     link: 'https://firststarconsults.online/',
   },
   {
-    name: 'Newage Staking',
-    desc: 'The Newage Staking Dapp represents a decentralized application meticulously deployed on the Polygon network. It seamlessly interfaces with a frontend user interface constructed using the Next.js framework. This harmonious integration underscores our commitment to providing efficient and user-friendly blockchain solutions.',
-    link: 'https://www.newagecoin.cash/',
+    name: 'Collobogig',
+    desc: 'A collaborative platform leveraging modern web technologies to create an intuitive and efficient user experience. Built with React, TypeScript, and Redux Toolkit for robust state management.',
+    link: 'https://collobogig.com',
   },
-
   {
-    name: 'Nestjs Authentication and Communication',
-    desc: 'The project features a robust backend designed to handle user authentication and communication. It includes a secure and scalable email and password-based authentication system for managing user identities.',
-    github: 'https://github.com/amazingprincelee/nestjs-auth-systems',
-    
+    name: 'Mobileruns',
+    desc: 'A mobile-first application developed using React Native and TypeScript, providing seamless cross-platform functionality with an emphasis on performance and user experience.',
+    link: 'https://mobileruns.com',
   },
 ];
 
 export const feedbacks: FeedbackType[] = [
   {
-    name: 'Bar. Evans Dule',
+    name: 'Beatrice Oahmen',
     feedback:
-      'Prince Lee Nna is an exceptional full-stack developer. His technical skills are exemplary, and he consistently delivers high-quality code. His ability to collaborate with the team, meet deadlines, and find creative solutions to complex problems is truly commendable. Prince dedication and professionalism make him a key asset to our organization. Keep up the fantastic work!.',
+      'Working with Prince Lee has been transformative for our business. His expertise in full-stack development helped us launch our e-commerce platform ahead of schedule. His profound understanding of both frontend and backend technologies, combined with his ability to optimize for performance, resulted in a 40% increase in our website conversion rate. His implementation of responsive design principles ensures our platform works flawlessly across all devices.',
   },
   {
-    name: 'SomMoney',
+    name: 'Chijioke Amadi',
     feedback:
-      'Prince Lee Nna is a stellar full-stack developer. His technical prowess and attention to detail shine through in his work. He consistently goes above and beyond to meet project goals and demonstrates a strong commitment to the team success. Prince ability to handle complex challenges and deliver results makes him a valuable asset to our organization. Keep up the fantastic work!',
+      'Prince Lee is the epitome of technical excellence and professional reliability. As our lead developer, he architected and delivered our enterprise-level application that now serves over 50,000 daily users. His innovative approach to implementing real-time features and optimization of database queries reduced our server costs by 35%. Beyond his technical skills, his ability to communicate complex technical concepts to non-technical stakeholders made him invaluable to our project success.',
   },
 ];
 

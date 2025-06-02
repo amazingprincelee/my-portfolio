@@ -16,6 +16,7 @@ import SEO from '../components/SEO';
 // import Contact from '../components/ContactUs';
 import { GithubUserType } from '../types';
 import FreelancerProfiles from '../components/FreelancerLink';
+const YouTubeSection = dynamic(() => import('../components/YouTubeSection'));
 
 export default function Home({
   githubProfileData,
@@ -28,15 +29,13 @@ export default function Home({
       <Navigation />
       <Greetings />
       <Skills />
-      <FreelancerProfiles />
       <Projects />
+      <YouTubeSection />
       <Proficiency />
       <Contact />
       <Education />
       <Experience />
       <Feedbacks />
-      
-      {/* {showContactUs ? <Contact /> : null} */}
       <GithubProfileCard {...githubProfileData} />
     </div>
   );
