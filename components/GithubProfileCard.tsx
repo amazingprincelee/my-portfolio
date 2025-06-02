@@ -50,7 +50,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
           </Col>
           <Col lg="4" className="text-center text-lg-right">
             <div className="mb-4">
-              <h4 className="text-white mb-4 font-weight-bold">Let's Connect</h4>
+              <h4 className="text-white mb-4 font-weight-bold">Let&apos;s Connect</h4>
               <div className="social-links-grid">
                 <SocialLinks />
               </div>
