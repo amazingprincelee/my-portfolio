@@ -78,6 +78,10 @@ export type ProjectType = {
   desc: string;
   github?: string;
   link?: string;
+  images?: string[];
+  downloadLink?: string;
+  status?: string;
+  technologies?: string[];
 };
 
 // * FEEDBACK SECTION

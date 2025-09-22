@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
   title: "Hi all, I'm Prince Lee",
   description:
-    'I am a passionate Full-Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. With a strong foundation in both frontend and backend technologies, I bring a comprehensive approach to developing scalable and maintainable solutions',
+    'I am a passionate Full-Stack Developer and Software Architect specializing in enterprise-level applications and innovative digital solutions. With proven expertise in MERN stack, React Native, and blockchain technologies, I have successfully delivered complex projects including comprehensive school management systems, healthcare applications, and enterprise platforms. I excel at transforming business requirements into scalable, secure, and user-centric applications that drive growth and efficiency.',
   resumeLink: '/Prince_Lee_Nna_CV.pdf',
 };
 
@@ -166,10 +166,10 @@ export const educationInfo: EducationType[] = [
 export const experience: ExperienceType[] = [
   {
     role: 'FullStack Developer',
-    company: 'Phylee Travel and Tours Limited',
-    companyLogo: '/img/icons/common/phylee.jpg',
+    company: 'Sonatech Global',
+    companyLogo: '/img/icons/common/sonatech.jpg',
     date: 'May 2024 - Present',
-    desc: 'I am the Full Stack developer, project manager, and software architect of this organization. Using the MERN stack, I designed and developed both the frontend and backend.',
+    desc: 'I am the Full Stack developer, project manager, and software architect of this organization. Using the MERN stack, I designed and developed both the frontend and backend for enterprise-level solutions.',
   },
   {
     role: 'Back End Developer / project manager',
@@ -197,25 +197,51 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'Phylee Travel and Tours Limited',
-    desc: 'This project is a thorough demonstration of full-stack development skills, incorporating a range of technologies. It uses Atlas for cloud-based data storage, Node.js and Express for creating the backend, and sets up RESTful APIs for communication between the server and client. The frontend is built with React, ensuring a dynamic interface. ',
-    github: 'https://github.com/amazingprincelee/phyleeTravels-FrontEnd',
-    link: 'https://phyleejourneys.com/',
+    name: 'Prince Lee EduSuite - School Management System',
+    desc: 'A comprehensive school management system featuring separate dashboards for administrators, teachers, and parents. Built with MERN stack, it includes student management, academic tracking, billing systems, examination management, and real-time communication. Features responsive design with role-based access control and secure payment integration.',
+    github: 'https://github.com/amazingprincelee/school-management-system',
+    link: 'http://localhost:5173',
+    images: [
+      '/img/admin/admin dashboard home.jpg',
+      '/img/teacher/teachers dashboard.png',
+      '/img/parent/parent potal dashboard.jpg',
+      '/img/admin/admin dashboard manage student.jpg',
+      '/img/admin/admin dashboard exams.jpg'
+    ]
   },
   {
     name: 'Mobile Doctor App',
-    desc: 'Mobile Doctor is a health provider mobile application developed by First Star Consult Limited. I oversee the application as both its manager and lead developer. I implemented the backend using Node.js and Express, supervised the Figma UI design, and developed the frontend using React Native.',
-    link: 'https://firststarconsults.online/',
+    desc: 'A revolutionary healthcare mobile application built with React Native and MERN stack. Features telemedicine consultations, appointment booking, medical records management, and real-time chat with healthcare providers. Includes secure payment processing and multi-platform compatibility.',
+    link: 'https://mobiledoctorapp.com/',
+    downloadLink: 'https://expo.dev/artifacts/eas/xdvc9rGufGWqdF1WbJDRsS.apk',
+    images: [
+      '/img/mobiledoctor/mobile doctor app.jpg',
+      '/img/mobiledoctor/mobile doctor consultation.jpg',
+      '/img/mobiledoctor/mobile doctor dashboard.jpg'
+    ]
+  },
+  {
+    name: 'Sonatech Global Enterprise Platform',
+    desc: 'An enterprise-level business management platform developed for Sonatech Global. Features comprehensive dashboard analytics, project management tools, client relationship management, and automated reporting systems. Built with modern web technologies ensuring scalability and performance.',
+    link: 'https://sanatetechglobal.com',
+    images: [
+      '/img/Sonatech/sonatech landing page.jpg',
+      '/img/Sonatech/sonatech dashboard home.jpg',
+      '/img/Sonatech/sonatech dashboard.jpg',
+      '/img/Sonatech/sonatech about.jpg'
+    ]
+  },
+  {
+    name: 'CryptoSaver DApp (Coming Soon)',
+    desc: 'An innovative decentralized application for strategic cryptocurrency savings. Users can deposit Solana, Ethereum, and WLFI tokens with time-locked smart contracts (minimum 2 years). Features secure vault mechanisms, yield optimization, and cannot be withdrawn until the specified time period. Built with Solidity and Web3 technologies.',
+    github: 'https://github.com/amazingprincelee/cryptosaver-dapp',
+    status: 'In Development',
+    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'Solana']
   },
   {
     name: 'Collobogig',
     desc: 'A collaborative platform leveraging modern web technologies to create an intuitive and efficient user experience. Built with React, TypeScript, and Redux Toolkit for robust state management.',
     link: 'https://collobogig.com',
-  },
-  {
-    name: 'Mobileruns',
-    desc: 'A mobile-first application developed using React Native and TypeScript, providing seamless cross-platform functionality with an emphasis on performance and user experience.',
-    link: 'https://mobileruns.com',
   },
 ];
 
@@ -236,32 +262,39 @@ export const feedbacks: FeedbackType[] = [
 export const showContactUs: boolean = true;
 
 export const seoData: SEODataType = {
-  title: 'Prince Lee | Full Stack Developer & Freelancer',
+  title: 'Prince Lee | Full Stack Developer & Software Architect',
   description:
-    'Prince Lee is a versatile Full Stack Developer specializing in React, React Native, Node.js, Express.js, PostgreSQL, MongoDB, and more. Offering exceptional web and mobile app development services.',
+    'Prince Lee is an expert Full Stack Developer and Software Architect specializing in enterprise applications, school management systems, healthcare apps, and blockchain DApps. Proven track record in MERN stack, React Native, and Solidity development.',
   author: 'Prince Lee',
   image: 'https://princelee.pro/images/nnaprince.jpg',
   url: 'https://princelee.pro',
   keywords: [
     'Prince Lee',
     'Full Stack Developer',
+    'Software Architect',
+    'School Management System',
+    'Healthcare App Developer',
     'React Developer',
     'React Native Developer',
     'Node.js Developer',
     'Express.js Developer',
-    'Freelance Developer',
-    'Web Developer',
+    'Blockchain Developer',
+    'DApp Developer',
+    'Solidity Developer',
+    'Enterprise Applications',
+    'MERN Stack',
     'Mobile App Developer',
     'PostgreSQL',
     'MongoDB',
-    'NestJS',
     'TypeScript',
     'Next.js',
-    'Bootstrap',
     'Tailwind CSS',
     'RESTful API',
     'JavaScript Developer',
     'Portfolio',
     'Prince Lee Portfolio',
+    'EduSuite',
+    'Mobile Doctor',
+    'Sonatech Global',
   ],
 };
