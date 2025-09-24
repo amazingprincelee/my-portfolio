@@ -18,9 +18,9 @@ const Projects = () => {
               <h4 className="display-3 text-info">Projects</h4>
             </div>
           </div>
-          <Row className="row-grid align-items-center">
+          <Row className="row-grid align-items-stretch">
             {projects.map((data, i) => {
-              return <ProjectsCard key={i} {...data} />;
+              return <ProjectsCard key={`project-${i}`} {...data} />;
             })}
           </Row>
         </Container>

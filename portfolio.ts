@@ -200,7 +200,7 @@ export const projects: ProjectType[] = [
     name: 'Prince Lee EduSuite - School Management System',
     desc: 'A comprehensive school management system featuring separate dashboards for administrators, teachers, and parents. Built with MERN stack, it includes student management, academic tracking, billing systems, examination management, and real-time communication. Features responsive design with role-based access control and secure payment integration.',
     github: 'https://github.com/amazingprincelee/school-management-system',
-    link: 'http://localhost:5173',
+    link: 'https://princelee-school-management.vercel.app/',
     images: [
       '/img/admin/admin dashboard home.jpg',
       '/img/teacher/teachers dashboard.png',
