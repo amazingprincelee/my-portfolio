@@ -23,14 +23,20 @@ const ProjectsCard = ({ name, desc, github, link, images, downloadLink, status, 
       <Fade bottom duration={2000}>
         <Card className="shadow-lg--hover shadow h-100 d-flex flex-column">
           {images && images.length > 0 && (
-            <div className="position-relative" style={{ height: '280px', overflow: 'hidden' }}>
+            <div 
+              className={`position-relative ${name.toLowerCase().includes('mobile doctor') ? 'mobile-doctor-container' : ''}`}
+              style={{ 
+                height: '280px', 
+                overflow: 'hidden'
+              }}
+            >
               <img
                 src={images[currentImageIndex]}
                 alt={`${name} screenshot ${currentImageIndex + 1}`}
-                className="card-img-top w-100 h-100"
+                className={`card-img-top w-100 h-100 ${name.toLowerCase().includes('mobile doctor') ? 'mobile-doctor-image' : ''}`}
                 style={{ 
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
+                  objectFit: name.toLowerCase().includes('mobile doctor') ? 'contain' : 'cover',
+                  objectPosition: 'center',
                   borderTopLeftRadius: '0.375rem',
                   borderTopRightRadius: '0.375rem'
                 }}

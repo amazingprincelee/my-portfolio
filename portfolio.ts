@@ -199,7 +199,6 @@ export const projects: ProjectType[] = [
   {
     name: 'Prince Lee EduSuite - School Management System',
     desc: 'A comprehensive school management system featuring separate dashboards for administrators, teachers, and parents. Built with MERN stack, it includes student management, academic tracking, billing systems, examination management, and real-time communication. Features responsive design with role-based access control and secure payment integration.',
-    github: 'https://github.com/amazingprincelee/school-management-system',
     link: 'https://princelee-school-management.vercel.app/',
     images: [
       '/img/admin/admin dashboard home.jpg',
@@ -238,11 +237,7 @@ export const projects: ProjectType[] = [
     status: 'In Development',
     technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'Solana']
   },
-  {
-    name: 'Collobogig',
-    desc: 'A collaborative platform leveraging modern web technologies to create an intuitive and efficient user experience. Built with React, TypeScript, and Redux Toolkit for robust state management.',
-    link: 'https://collobogig.com',
-  },
+  
 ];
 
 export const feedbacks: FeedbackType[] = [

@@ -92,6 +92,23 @@ body > div:first-child {
   line-height: 1.6;
 }
 
+/* Mobile Doctor specific styling */
+.mobile-doctor-container {
+  background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+              linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+              linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.mobile-doctor-image {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: white;
+}
+
 /* Responsive improvements */
 @media (max-width: 991.98px) {
   .card.h-100 {
