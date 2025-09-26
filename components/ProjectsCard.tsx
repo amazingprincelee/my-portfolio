@@ -145,13 +145,15 @@ const ProjectsCard = ({ name, desc, github, link, images, downloadLink, status, 
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Live Demo"
+                    aria-label={name.toLowerCase().includes('mobile doctor') ? 'Landing Page' : 'Live Demo'}
                     size="sm"
                   >
                     <span className="btn-inner--icon">
                       <i className="fa fa-external-link mr-1" />
                     </span>
-                    <span className="nav-link-inner--text ml-1">Live Demo</span>
+                    <span className="nav-link-inner--text ml-1">
+                      {name.toLowerCase().includes('mobile doctor') ? 'Landing Page' : 'Live Demo'}
+                    </span>
                   </Button>
                 )}
                 

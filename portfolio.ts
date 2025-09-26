@@ -231,11 +231,19 @@ export const projects: ProjectType[] = [
     ]
   },
   {
-    name: 'CryptoSaver DApp (Coming Soon)',
-    desc: 'An innovative decentralized application for strategic cryptocurrency savings. Users can deposit Solana, Ethereum, and WLFI tokens with time-locked smart contracts (minimum 2 years). Features secure vault mechanisms, yield optimization, and cannot be withdrawn until the specified time period. Built with Solidity and Web3 technologies.',
-    github: 'https://github.com/amazingprincelee/cryptosaver-dapp',
+    name: 'Strategic Crypto Save DApp',
+    desc: 'Create time-locked savings vaults, build disciplined saving habits, and achieve your financial goals with the power of decentralized finance. This innovative DeFi platform allows users to create secure savings vaults with custom lock periods to prevent impulsive spending and build long-term wealth. Features include secure smart contracts, P2P trading, instant access after lock period, and automated savings goals.',
+    link: 'https://strategic-crypto-save.vercel.app/',
+    github: 'https://github.com/amazingprincelee/backend-strategic-save',
     status: 'In Development',
-    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'Solana']
+    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'DeFi', 'Smart Contracts'],
+    images: [
+      '/img/strategic-crypto-save/home.jpg',
+      '/img/strategic-crypto-save/dashboard.jpg',
+      '/img/strategic-crypto-save/vault.jpg',
+      '/img/strategic-crypto-save/login.jpg',
+      '/img/strategic-crypto-save/login-success.jpg'
+    ]
   },
   
 ];

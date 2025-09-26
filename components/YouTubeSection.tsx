@@ -13,24 +13,35 @@ const YouTubeSection = () => {
         </Row>
         <Row className="justify-content-center">
           <Col lg="10">
-            <div className="embed-responsive embed-responsive-16by9">
-              <iframe 
-                className="embed-responsive-item shadow-lg rounded"
-                src="https://www.youtube.com/embed/videoseries?list=UUamazingprincelee"
-                title="Latest YouTube videos"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <div className="text-center mt-4">
-              <a 
-                href="https://www.youtube.com/@amazingprincelee" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="btn btn-white text-success"
-              >
-                Visit My Channel
-              </a>
+            <div className="text-center p-5 bg-white rounded shadow-lg">
+              <div className="mb-4">
+                <i className="fa fa-youtube-play text-danger" style={{ fontSize: '4rem' }}></i>
+              </div>
+              <h3 className="text-dark mb-3">Amazing Prince Lee</h3>
+              <p className="text-muted mb-4">
+                Explore my latest tech tutorials, development insights, and coding projects on YouTube. 
+                Subscribe to stay updated with the latest content!
+              </p>
+              <div className="d-flex justify-content-center flex-wrap">
+                <a 
+                  href="https://www.youtube.com/@amazingprincelee" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn btn-danger btn-lg mr-3 mb-2"
+                >
+                  <i className="fa fa-youtube-play mr-2"></i>
+                  Visit Channel
+                </a>
+                <a 
+                  href="https://www.youtube.com/@amazingprincelee?sub_confirmation=1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-danger btn-lg mb-2"
+                >
+                  <i className="fa fa-bell mr-2"></i>
+                  Subscribe
+                </a>
+              </div>
             </div>
           </Col>
         </Row>
