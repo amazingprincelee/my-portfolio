@@ -220,29 +220,27 @@ export const projects: ProjectType[] = [
     ]
   },
   {
-    name: 'Sonatech Global Enterprise Platform',
-    desc: 'An enterprise-level business management platform developed for Sonatech Global. Features comprehensive dashboard analytics, project management tools, client relationship management, and automated reporting systems. Built with modern web technologies ensuring scalability and performance.',
-    link: 'https://sanatetechglobal.com',
+    name: 'Pamprop — Property Trust Platform',
+    desc: 'A full-stack real estate web application built with React, Node.js, and MongoDB. Features include property listings (land, rentals, hotels), an escrow system for secure transactions, real-time chat between buyers and agents, inspection scheduling, KYC verification, a built-in wallet, and Google OAuth authentication. Designed to bring trust and transparency to property dealings.\n\nTech: React · Redux Toolkit · Node.js · Express · MongoDB · Socket.io · Cloudinary · JWT · Render (frontend hosting)',
+    link: 'https://pamprop.vercel.app/',
     images: [
-      '/img/Sonatech/sonatech landing page.jpg',
-      '/img/Sonatech/sonatech dashboard home.jpg',
-      '/img/Sonatech/sonatech dashboard.jpg',
-      '/img/Sonatech/sonatech about.jpg'
+      '/img/pamprop/home.jpeg',
+      '/img/pamprop/login.jpeg',
+      '/img/pamprop/chat.jpeg',
+      '/img/pamprop/request.jpeg',
+      '/img/pamprop/wallet.jpeg'
     ]
   },
   {
-    name: 'Strategic Crypto Save DApp',
-    desc: 'Create time-locked savings vaults, build disciplined saving habits, and achieve your financial goals with the power of decentralized finance. This innovative DeFi platform allows users to create secure savings vaults with custom lock periods to prevent impulsive spending and build long-term wealth. Features include secure smart contracts, P2P trading, instant access after lock period, and automated savings goals.',
-    link: 'https://strategic-crypto-save.vercel.app/',
-    github: 'https://github.com/amazingprincelee/backend-strategic-save',
-    status: 'In Development',
-    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'DeFi', 'Smart Contracts'],
+    name: 'SmartStrategy — AI Crypto Trading Platform',
+    desc: 'SmartStrategy is a full-stack AI-powered crypto trading platform. It combines a real-time signal engine, automated trading bots, and multi-exchange arbitrage scanning into one dashboard.\n\nKey features:\n- AI + technical analysis signal engine (RSI, EMA, MACD, multi-timeframe alignment) that generates LONG/SHORT signals with entry, stop-loss, and take-profit levels\n- Automated SmartSignal bots — user picks a signal at setup, bot opens and manages the trade on their exchange\n- Cross-exchange and triangular arbitrage scanner with live profit alerts\n- Demo mode with virtual balance for risk-free testing\n- Premium subscription system with crypto payments (Coinbase Commerce, NOWPayments)\n- Real-time WebSocket updates for signals, bot ticks, P&L, and arbitrage opportunities\n- Admin dashboard with user management, subscription tracking, and full transaction audit trail\n\nStack: React + Redux (frontend), Node.js + Express + MongoDB (backend), TensorFlow.js for AI inference, Socket.IO for real-time, CCXT for multi-exchange connectivity. Deployed on Vercel (frontend) with a cloud backend.',
+    link: 'https://smartstrategy.vercel.app/',
     images: [
-      '/img/strategic-crypto-save/home.jpg',
-      '/img/strategic-crypto-save/dashboard.jpg',
-      '/img/strategic-crypto-save/vault.jpg',
-      '/img/strategic-crypto-save/login.jpg',
-      '/img/strategic-crypto-save/login-success.jpg'
+      '/img/smartstrategy/home.jpg',
+      '/img/smartstrategy/dashboard.jpg',
+      '/img/smartstrategy/vault.jpg',
+      '/img/smartstrategy/login.jpg',
+      '/img/smartstrategy/login-success.jpg'
     ]
   },
   

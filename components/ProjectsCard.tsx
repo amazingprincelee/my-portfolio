@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardBody, Col, Button, Badge } from 'reactstrap';
-import Fade from 'react-reveal/Fade';
+import Fade from './Fade';
 import { ProjectType } from '../types/sections';
 
 const ProjectsCard = ({ name, desc, github, link, images, downloadLink, status, technologies }: ProjectType) => {
@@ -24,7 +24,7 @@ const ProjectsCard = ({ name, desc, github, link, images, downloadLink, status, 
         <Card className="shadow-lg--hover shadow h-100 d-flex flex-column">
           {images && images.length > 0 && (
             <div 
-              className={`position-relative ${name.toLowerCase().includes('mobile doctor') ? 'mobile-doctor-container' : ''}`}
+              className={`position-relative ${name.toLowerCase().includes('mobile doctor') || name.toLowerCase().includes('pamprop') ? 'mobile-doctor-container' : ''}`}
               style={{ 
                 height: '280px', 
                 overflow: 'hidden'
@@ -34,8 +34,8 @@ const ProjectsCard = ({ name, desc, github, link, images, downloadLink, status, 
                 src={images[currentImageIndex]}
                 alt={`${name} screenshot ${currentImageIndex + 1}`}
                 className={`card-img-top w-100 h-100 ${name.toLowerCase().includes('mobile doctor') ? 'mobile-doctor-image' : ''}`}
-                style={{ 
-                  objectFit: name.toLowerCase().includes('mobile doctor') ? 'contain' : 'cover',
+                style={{
+                  objectFit: name.toLowerCase().includes('mobile doctor') || name.toLowerCase().includes('pamprop') ? 'contain' : 'cover',
                   objectPosition: 'center',
                   borderTopLeftRadius: '0.375rem',
                   borderTopRightRadius: '0.375rem'

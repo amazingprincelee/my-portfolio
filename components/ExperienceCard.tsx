@@ -7,7 +7,7 @@ import {
   CardText,
   Col,
 } from 'reactstrap';
-import Fade from 'react-reveal/Fade';
+import Fade from './Fade';
 import { ExperienceType } from '../types/sections';
 
 const ExperienceCard = ({
