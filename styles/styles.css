@@ -525,6 +525,33 @@ body > div:first-child {
   object-position: center !important;
 }
 
+/* Navbar mobile fix — keep brand + toggler on same row */
+.navbar-main {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+}
+
+.navbar-main .container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.navbar-main .navbar-brand {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.navbar-main .navbar-toggler {
+  flex-shrink: 0;
+  margin-left: auto;
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+}
+
 /* Responsive improvements */
 @media (max-width: 991.98px) {
   .card.h-100 {
