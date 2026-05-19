@@ -11,9 +11,13 @@ import {
   FaBriefcase,
   FaGlobe,
 } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-const Icon = ({ icon: Ic }: { icon: any }) => <span style={{ display: 'flex' }}><Ic style={{ fontSize: '1.3rem' }} /></span>;
+const Icon = ({ icon }: { icon: IconType }) => (
+  <span style={{ display: 'flex' }}>
+    {React.createElement(icon as React.ComponentType<{ style?: React.CSSProperties }>, { style: { fontSize: '1.3rem' } })}
+  </span>
+);
 
 
 const btnStyle: React.CSSProperties = {
