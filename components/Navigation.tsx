@@ -88,11 +88,22 @@ const Navigation = () => {
         />
       )}
 
-      <header className="header-global" ref={navRef}>
+      <header
+        className="header-global"
+        ref={navRef}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          width: '100%',
+          zIndex: 1050,
+        }}
+      >
         <nav
           className="navbar navbar-transparent navbar-light headroom"
           id="navbar-main"
-          style={{ zIndex: 1050, position: 'relative' }}
+          style={{ zIndex: 1050 }}
         >
           <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'nowrap' }}>
 
