@@ -90,3 +90,13 @@ export type FeedbackType = {
   name: string;
   feedback: string;
 };
+
+// * YOUTUBE SECTION
+
+export type YouTubeVideoType = {
+  id: string;
+  title: string;
+  published: string;
+  thumbnail: string;
+  url: string;
+};

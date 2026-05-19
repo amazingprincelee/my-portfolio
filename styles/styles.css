@@ -525,6 +525,23 @@ body > div:first-child {
   object-position: center !important;
 }
 
+/* YouTube grid responsive */
+.youtube-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media (max-width: 991px) {
+  .youtube-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .youtube-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Navbar mobile fix — keep brand + toggler on same row */
 .navbar-main {
   display: flex !important;

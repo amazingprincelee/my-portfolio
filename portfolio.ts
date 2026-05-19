@@ -23,6 +23,12 @@ export const openSource = {
   githubUserName: 'amazingprincelee',
 };
 
+export const youtubeChannel = {
+  channelId: 'PASTE_YOUR_CHANNEL_ID_HERE', // Replace with your UC... channel ID
+  handle: '@techgistwithprincelee',
+  displayName: 'TechGist with Prince Lee',
+};
+
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {

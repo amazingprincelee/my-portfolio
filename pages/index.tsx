@@ -1,8 +1,9 @@
 import dynamic from 'next/dynamic';
 import { GetStaticProps } from 'next';
-import { openSource, showContactUs } from '../portfolio';
+import { openSource, showContactUs, youtubeChannel } from '../portfolio';
 import SEO from '../components/SEO';
 import { GithubUserType } from '../types';
+import { YouTubeVideoType } from '../types/sections';
 
 // Dynamic imports for better performance
 const Navigation = dynamic(() => import('../components/Navigation'));
@@ -19,9 +20,10 @@ const YouTubeSection = dynamic(() => import('../components/YouTubeSection'));
 
 interface HomeProps {
   githubProfileData: GithubUserType | null;
+  youtubeVideos: YouTubeVideoType[];
 }
 
-export default function Home({ githubProfileData }: HomeProps) {
+export default function Home({ githubProfileData, youtubeVideos }: HomeProps) {
   return (
     <div>
       <SEO />
@@ -29,7 +31,7 @@ export default function Home({ githubProfileData }: HomeProps) {
       <Greetings />
       <Skills />
       <Projects />
-      <YouTubeSection />
+      <YouTubeSection videos={youtubeVideos} />
       <Proficiency />
       {showContactUs && <Contact />}
       <Education />
@@ -40,31 +42,52 @@ export default function Home({ githubProfileData }: HomeProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+async function fetchYouTubeVideos(): Promise<YouTubeVideoType[]> {
   try {
-    const githubProfileData: GithubUserType = await fetch(
-      `https://api.github.com/users/${openSource.githubUserName}`
-    ).then((res) => {
-      if (!res.ok) {
-        throw new Error(`GitHub API error: ${res.status}`);
-      }
-      return res.json();
-    });
+    const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${youtubeChannel.channelId}`;
+    const res = await fetch(rssUrl);
+    if (!res.ok) return [];
+    const xml = await res.text();
 
-    return {
-      props: { 
-        githubProfileData 
-      },
-      revalidate: 86400, // Revalidate once per day
-    };
-  } catch (error) {
-    console.error('Error fetching GitHub profile data:', error);
-    
-    return {
-      props: { 
-        githubProfileData: null 
-      },
-      revalidate: 3600, // Retry after 1 hour on error
-    };
+    const entries = xml.split('<entry>').slice(1);
+    return entries.slice(0, 6).map((entry) => {
+      const getId = (tag: string) => {
+        const m = entry.match(new RegExp(`<${tag}[^>]*>([^<]+)</${tag}>`));
+        return m ? m[1].trim() : '';
+      };
+      const getAttr = (tag: string, attr: string) => {
+        const m = entry.match(new RegExp(`<${tag}[^>]*${attr}="([^"]+)"`));
+        return m ? m[1].trim() : '';
+      };
+
+      const videoId = getId('yt:videoId');
+      return {
+        id: videoId,
+        title: getId('title'),
+        published: getId('published'),
+        thumbnail: getAttr('media:thumbnail', 'url') || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+        url: `https://www.youtube.com/watch?v=${videoId}`,
+      };
+    });
+  } catch {
+    return [];
   }
+}
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const [githubProfileData, youtubeVideos] = await Promise.allSettled([
+    fetch(`https://api.github.com/users/${openSource.githubUserName}`).then((res) => {
+      if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+      return res.json() as Promise<GithubUserType>;
+    }),
+    fetchYouTubeVideos(),
+  ]);
+
+  return {
+    props: {
+      githubProfileData: githubProfileData.status === 'fulfilled' ? githubProfileData.value : null,
+      youtubeVideos: youtubeVideos.status === 'fulfilled' ? youtubeVideos.value : [],
+    },
+    revalidate: 86400,
+  };
 };
