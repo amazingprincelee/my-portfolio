@@ -13,10 +13,10 @@ import {
 
 export const greetings: GreetingsType = {
   name: 'Prince Lee Nna',
-  title: "Hi all, I'm Prince Lee",
+  title: "Hi, I'm Prince Lee",
   description:
-    'I am a passionate Full-Stack Developer and Software Architect specializing in enterprise-level applications and innovative digital solutions. With proven expertise in MERN stack, React Native, and blockchain technologies, I have successfully delivered complex projects including comprehensive school management systems, healthcare applications, and enterprise platforms. I excel at transforming business requirements into scalable, secure, and user-centric applications that drive growth and efficiency.',
-  resumeLink: '/Prince_Lee_Nna_CV.pdf',
+    'Senior Full-Stack Engineer & Head of IT specialising in enterprise application development and software architecture. I architect and deliver complex systems from the ground up — including full ERP platforms, real estate apps, healthcare solutions, and AI-powered trading platforms. Specialist in the MERN stack, TypeScript, React Native, Docker, and real-time systems. Available for remote full-stack and IT leadership roles worldwide.',
+  resumeLink: '/Prince_Lee_Nna_CV.html',
 };
 
 export const openSource = {
@@ -27,8 +27,9 @@ export const contact = {};
 
 export const socialLinks: SocialLinksType = {
   url: 'https://princelee.pro/',
-  linkedin: 'https://www.linkedin.com/in/amazingprincelee',
+  linkedin: 'https://www.linkedin.com/in/amazingprincenna',
   github: 'https://github.com/amazingprincelee',
+  upwork: 'https://www.upwork.com/freelancers/~01f5e085fce3ca17bd?mp_source=share',
   instagram: 'https://www.instagram.com/amazingprincelee/',
   facebook: 'https://web.facebook.com/amazingprincelee/',
   twitter: 'https://x.com/amazinprincelee',
@@ -165,6 +166,13 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
+    role: 'Head of IT / Lead Software Engineer',
+    company: 'Newpal Nigeria Limited',
+    companyLogo: '/img/newpal/logo.png',
+    date: 'Dec 2024 - Present',
+    desc: 'Sole architect and developer of Newpal\'s full enterprise ERP system from the ground up. The system spans 10+ integrated modules — procurement, finance, inventory (raw, finished, assets), production, dispatch, sales, QA, weighbridge, and gate management — serving an entire manufacturing operation end-to-end.',
+  },
+  {
     role: 'FullStack Developer',
     company: 'Sonatech Global',
     companyLogo: '/img/icons/common/sonatech.jpg',
@@ -197,9 +205,51 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
+    name: 'PamProperty — Real Estate Mobile & Web Platform',
+    desc: 'A full-stack real estate platform trusted for transparent property transactions. Features property listings (land, rentals, hotels), a built-in escrow system for secure buyer-seller dealings, real-time chat, inspection scheduling, KYC verification, and a wallet system. Available as a mobile app (Android) and web app.\n\nHighlight: The escrow system removes the fear of fraud in Nigerian property deals — buyers only release funds after inspection approval.\n\nTech: React · Redux Toolkit · Node.js · Express · MongoDB · Socket.io · React Native · JWT · Cloudinary',
+    link: 'https://pamproperty.com/',
+    downloadLink: 'https://www.pamproperty.com/download',
+    status: 'Featured',
+    technologies: ['React', 'React Native', 'Node.js', 'MongoDB', 'Socket.io', 'Redux'],
+    images: [
+      '/img/pamprop/splash.svg',
+      '/img/pamprop/home.jpeg',
+      '/img/pamprop/login.jpeg',
+      '/img/pamprop/wallet.jpeg',
+      '/img/pamprop/request.jpeg',
+    ]
+  },
+  {
+    name: 'Newpal ERP System — Enterprise Resource Planning',
+    desc: 'A full enterprise ERP system built solo for Newpal Nigeria Limited (a manufacturing company), where I serve as Head of IT. This is one of the most complex projects I have delivered — 10+ integrated modules covering every operational department in a manufacturing company.\n\nModules: Procurement · Finance & Accounts · Inventory (Raw, Finished, Assets) · Production · Quality Assurance · Dispatch · Sales · Weighbridge · Gate Management · Super Admin\n\nEvery module talks to the others in real-time. Role-based access ensures each department sees only what they need. Built from scratch — architecture, database design, UI, API, deployment — all by me.',
+    status: 'Enterprise',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT', 'REST API'],
+    images: [
+      '/img/newpal/logo.png',
+      '/img/newpal/flow.jpg',
+      '/img/newpal/procurement-flow.jpg',
+    ]
+  },
+  {
+    name: 'ExpertHub Workspace — Expert Workspace & Learning Platform',
+    desc: 'A professional workspace booking and expert learning platform that connects trainers, professionals, and businesses. Users can book physical workspace rooms (boardroom, meeting room, training room), join expert-led sessions, manage memberships, and access curated learning resources.\n\nKey features: Smart workspace reservation with availability calendar · Expert-led training programs · Membership tiers with subscription billing · Provider & client role system · Wallet & payment integration · Real-time notifications\n\nTech: Next.js · Node.js · Express · MongoDB · Socket.io · Flutterwave · TypeScript',
+    link: 'https://workspace.experthubllc.com/',
+    status: 'Live',
+    technologies: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'Flutterwave', 'Socket.io'],
+    images: [
+      '/img/experthub/hero.png',
+      '/img/experthub/board-room.png',
+      '/img/experthub/meeting-room.png',
+      '/img/experthub/training-room.png',
+      '/img/experthub/mockup.jpg',
+    ]
+  },
+  {
     name: 'Prince Lee EduSuite - School Management System',
     desc: 'A comprehensive school management system featuring separate dashboards for administrators, teachers, and parents. Built with MERN stack, it includes student management, academic tracking, billing systems, examination management, and real-time communication. Features responsive design with role-based access control and secure payment integration.',
     link: 'https://princelee-school-management.vercel.app/',
+    status: 'Live',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Redux'],
     images: [
       '/img/admin/admin dashboard home.jpg',
       '/img/teacher/teachers dashboard.png',
@@ -213,6 +263,8 @@ export const projects: ProjectType[] = [
     desc: 'A revolutionary healthcare mobile application built with React Native and MERN stack. Features telemedicine consultations, appointment booking, medical records management, and real-time chat with healthcare providers. Includes secure payment processing and multi-platform compatibility.',
     link: 'https://mobiledoctorapp.com/',
     downloadLink: 'https://expo.dev/artifacts/eas/xdvc9rGufGWqdF1WbJDRsS.apk',
+    status: 'Live',
+    technologies: ['React Native', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
     images: [
       '/img/mobiledoctor/mobile doctor app.jpg',
       '/img/mobiledoctor/mobile doctor consultation.jpg',
@@ -220,21 +272,11 @@ export const projects: ProjectType[] = [
     ]
   },
   {
-    name: 'Pamprop — Property Trust Platform',
-    desc: 'A full-stack real estate web application built with React, Node.js, and MongoDB. Features include property listings (land, rentals, hotels), an escrow system for secure transactions, real-time chat between buyers and agents, inspection scheduling, KYC verification, a built-in wallet, and Google OAuth authentication. Designed to bring trust and transparency to property dealings.\n\nTech: React · Redux Toolkit · Node.js · Express · MongoDB · Socket.io · Cloudinary · JWT · Render (frontend hosting)',
-    link: 'https://pamprop.vercel.app/',
-    images: [
-      '/img/pamprop/home.jpeg',
-      '/img/pamprop/login.jpeg',
-      '/img/pamprop/chat.jpeg',
-      '/img/pamprop/request.jpeg',
-      '/img/pamprop/wallet.jpeg'
-    ]
-  },
-  {
     name: 'SmartStrategy — AI Crypto Trading Platform',
     desc: 'SmartStrategy is a full-stack AI-powered crypto trading platform. It combines a real-time signal engine, automated trading bots, and multi-exchange arbitrage scanning into one dashboard.\n\nKey features:\n- AI + technical analysis signal engine (RSI, EMA, MACD, multi-timeframe alignment) that generates LONG/SHORT signals with entry, stop-loss, and take-profit levels\n- Automated SmartSignal bots — user picks a signal at setup, bot opens and manages the trade on their exchange\n- Cross-exchange and triangular arbitrage scanner with live profit alerts\n- Demo mode with virtual balance for risk-free testing\n- Premium subscription system with crypto payments (Coinbase Commerce, NOWPayments)\n- Real-time WebSocket updates for signals, bot ticks, P&L, and arbitrage opportunities\n- Admin dashboard with user management, subscription tracking, and full transaction audit trail\n\nStack: React + Redux (frontend), Node.js + Express + MongoDB (backend), TensorFlow.js for AI inference, Socket.IO for real-time, CCXT for multi-exchange connectivity. Deployed on Vercel (frontend) with a cloud backend.',
     link: 'https://smartstrategy.vercel.app/',
+    status: 'Live',
+    technologies: ['React', 'TensorFlow.js', 'Node.js', 'MongoDB', 'Socket.io', 'CCXT'],
     images: [
       '/img/smartstrategy/home.jpg',
       '/img/smartstrategy/dashboard.jpg',

@@ -34,20 +34,20 @@ const Greetings = () => {
                   </h1>
                   <p className="lead text-white">{greetings.description}</p>
                   <SocialLinks />
-                  {greetings.resumeLink && (
-                    <div className="btn-wrapper my-4">
-                      <Button
-                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                        color="default"
-                        href={greetings.resumeLink}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-file" />
-                        </span>
-                        <span className="btn-inner--text">See My Resume</span>
-                      </Button>
-                    </div>
-                  )}
+                  <div className="btn-wrapper my-4">
+                    <Button
+                      className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+                      color="default"
+                      href="https://prince-lee-portfolio.vercel.app/Prince_Lee_Nna_CV.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="btn-inner--icon mr-1">
+                        <i className="fa fa-file-text" />
+                      </span>
+                      <span className="btn-inner--text">See My CV</span>
+                    </Button>
+                  </div>
                 </Col>
                 <Col lg="6">
                   <GreetingLottie animationPath="/lottie/coding.json" />

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Lee Nna — CV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 11pt;
+      color: #1a1a2e;
+      background: #f4f6f9;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 32px auto;
+      background: #ffffff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #0d3349 0%, #1a5276 100%);
+      color: #ffffff;
+      padding: 36px 48px 28px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .header-name h1 {
+      font-size: 26pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .header-name .known-as {
+      font-size: 11pt;
+      color: #a8c8e8;
+      margin-top: 2px;
+    }
+
+    .header-name .title {
+      font-size: 12pt;
+      color: #f0c040;
+      font-weight: 600;
+      margin-top: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 9.5pt;
+      color: #c8dff0;
+      line-height: 1.8;
+    }
+
+    .header-contact a {
+      color: #f0c040;
+      text-decoration: none;
+    }
+
+    .available-badge {
+      display: inline-block;
+      background: #27ae60;
+      color: #ffffff;
+      font-size: 8.5pt;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    /* BODY */
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 0;
+    }
+
+    .main-col {
+      padding: 32px 36px;
+      border-right: 1px solid #e8edf2;
+    }
+
+    .side-col {
+      padding: 32px 24px;
+      background: #f8fafc;
+    }
+
+    /* SECTION */
+    .section { margin-bottom: 24px; }
+
+    .section-title {
+      font-size: 9pt;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #1a5276;
+      border-bottom: 2px solid #1a5276;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* EXPERIENCE */
+    .exp-item { margin-bottom: 18px; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .exp-role {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0d3349;
+    }
+
+    .exp-date {
+      font-size: 8.5pt;
+      color: #7f8c8d;
+      white-space: nowrap;
+      font-style: italic;
+    }
+
+    .exp-company {
+      font-size: 10pt;
+      color: #1a5276;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .exp-summary {
+      font-size: 9.5pt;
+      color: #4a4a5a;
+      margin-bottom: 6px;
+      font-style: italic;
+    }
+
+    ul.bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.bullets li {
+      font-size: 9.5pt;
+      color: #3a3a4a;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+
+    ul.bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #1a5276;
+      font-size: 8pt;
+    }
+
+    /* PROJECTS */
+    .project-item { margin-bottom: 12px; }
+
+    .project-name {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0d3349;
+    }
+
+    .project-name a {
+      color: #1a5276;
+      text-decoration: none;
+    }
+
+    .project-desc {
+      font-size: 9pt;
+      color: #4a4a5a;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .project-tech {
+      font-size: 8.5pt;
+      color: #7f8c8d;
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    /* SIDEBAR */
+    .side-section { margin-bottom: 22px; }
+
+    .side-title {
+      font-size: 8.5pt;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #1a5276;
+      border-bottom: 1.5px solid #1a5276;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .skill-group { margin-bottom: 8px; }
+
+    .skill-label {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0d3349;
+      margin-bottom: 2px;
+    }
+
+    .skill-value {
+      font-size: 9pt;
+      color: #4a4a5a;
+      line-height: 1.4;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      background: #e8f0f7;
+      color: #1a5276;
+      font-size: 8pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .edu-item { margin-bottom: 10px; }
+
+    .edu-degree {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0d3349;
+      line-height: 1.3;
+    }
+
+    .edu-school {
+      font-size: 9pt;
+      color: #1a5276;
+    }
+
+    .edu-year {
+      font-size: 8.5pt;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .cert-item {
+      font-size: 9pt;
+      color: #3a3a4a;
+      padding-left: 12px;
+      position: relative;
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .cert-item::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+      font-size: 8pt;
+    }
+
+    .contact-row {
+      font-size: 9pt;
+      color: #3a3a4a;
+      margin-bottom: 5px;
+      display: flex;
+      gap: 6px;
+      align-items: flex-start;
+    }
+
+    .contact-row a { color: #1a5276; text-decoration: none; }
+
+    .contact-icon { color: #1a5276; font-size: 9pt; flex-shrink: 0; margin-top: 1px; }
+
+    /* PRINT */
+    @media print {
+      body { background: #fff; font-size: 10pt; }
+      .page { margin: 0; box-shadow: none; max-width: 100%; }
+      a { color: inherit !important; }
+      .available-badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .side-col { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    @media screen {
+      .print-btn {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        background: #1a5276;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 10pt;
+        font-weight: 700;
+        cursor: pointer;
+        z-index: 999;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .print-btn:hover { background: #0d3349; }
+    }
+
+    @media print {
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">⬇ Save as PDF</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-name">
+        <h1>Prince Leelabari Nna</h1>
+        <div class="known-as">Known as Prince Lee</div>
+        <div class="title">Senior Full-Stack Engineer &nbsp;|&nbsp; Head of IT &nbsp;|&nbsp; Software Architect</div>
+        <div class="available-badge">&#10003; Available for Remote Roles Worldwide</div>
+      </div>
+      <div class="header-contact">
+        <div>&#128222; +44 7393 178572</div>
+        <div>&#128222; +234 803 542 1019</div>
+        <div><a href="mailto:princeleelabari@gmail.com">princeleelabari@gmail.com</a></div>
+        <div><a href="https://www.linkedin.com/in/amazingprincenna">linkedin.com/in/amazingprincenna</a></div>
+        <div><a href="https://github.com/amazingprincelee">github.com/amazingprincelee</a></div>
+        <div><a href="https://prince-lee-portfolio.vercel.app">prince-lee-portfolio.vercel.app</a></div>
+        <div><a href="https://www.upwork.com/freelancers/~01f5e085fce3ca17bd">Upwork Profile</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- MAIN COLUMN -->
+    <div class="main-col">
+
+      <!-- SUMMARY -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p style="font-size:9.5pt; color:#3a3a4a; line-height:1.55;">
+          Results-driven Senior Full-Stack Engineer and Head of IT with a proven track record of architecting and delivering
+          complex enterprise systems from scratch. Built a full 10-module ERP for a manufacturing company as sole developer,
+          deployed live real estate and healthcare mobile apps, and shipped an AI-powered crypto trading platform.
+          Specialist in the MERN stack, TypeScript, React Native, Docker, CI/CD pipelines, and real-time Socket.IO systems.
+          Certified by the Computer Professionals Registration Council of Nigeria (CPN) at NSQ Level 3.
+          Actively seeking remote full-stack or IT leadership roles.
+        </p>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Head of IT / Lead Full-Stack Engineer</div>
+            <div class="exp-date">Dec 2024 – Present</div>
+          </div>
+          <div class="exp-company">Newpal Nigeria Limited &nbsp;·&nbsp; Remote</div>
+          <div class="exp-summary">Sole architect and developer of a full enterprise ERP for a 120 MT/day agro-processing plant operating across 18,000 hectares.</div>
+          <ul class="bullets">
+            <li>Architected and delivered a bespoke 10-module ERP from the ground up — procurement, finance, inventory (raw, finished, assets), production, QA, dispatch, sales, weighbridge, gate management, and super admin</li>
+            <li>Designed and secured backend APIs using Node.js, Express.js, MongoDB, and JWT-based RBAC authentication</li>
+            <li>Implemented real-time operational dashboards and alerts using Socket.IO, improving management visibility across the factory floor</li>
+            <li>Built automated PDF and Excel reporting pipelines, eliminating manual data entry and reducing reporting time by 80%</li>
+            <li>Developed a React/Redux Toolkit admin interface with Tailwind CSS, containerised with Docker and deployed via CI/CD pipeline</li>
+            <li>Collaborated directly with executive management to translate complex operational requirements into scalable software architecture</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Full-Stack Developer &amp; Software Architect</div>
+            <div class="exp-date">May 2024 – Nov 2024</div>
+          </div>
+          <div class="exp-company">Sonatech Global &nbsp;·&nbsp; Remote</div>
+          <ul class="bullets">
+            <li>Designed and built multiple enterprise web applications from requirements through to deployment using the full MERN stack</li>
+            <li>Sole owner of the company's live website — <a href="https://sanatechglobal.com">sanatechglobal.com</a> — from development to production deployment</li>
+            <li>Led architecture planning sessions, establishing API structuring standards and CI/CD practices adopted across the engineering team</li>
+            <li>Mentored junior and mid-level developers through code reviews and engineering best practices</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Backend Developer &amp; Project Manager</div>
+            <div class="exp-date">Dec 2023 – Apr 2024</div>
+          </div>
+          <div class="exp-company">First Star Consults &nbsp;·&nbsp; Remote</div>
+          <ul class="bullets">
+            <li>Led backend architecture and API design for multiple client software projects using the MERN stack</li>
+            <li>Made critical decisions on technology choices, database design, and system patterns to ensure robust, scalable solutions</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Lead Smart Contract &amp; DApp Developer</div>
+            <div class="exp-date">Jan 2023 – Jul 2023</div>
+          </div>
+          <div class="exp-company">George Stojkovic &nbsp;·&nbsp; Remote</div>
+          <ul class="bullets">
+            <li>Led development of Solidity smart contracts and decentralised applications (DApps) on Ethereum</li>
+            <li>Oversaw team of developers, conducted code reviews, and ensured security best practices in on-chain logic</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-role">Director / ICT Lead &amp; Web Developer</div>
+            <div class="exp-date">Sept 2020 – Jan 2023</div>
+          </div>
+          <div class="exp-company">BEDETELS Triumphant International Academy</div>
+          <ul class="bullets">
+            <li>Managed the school's full ICT department, overseeing hardware infrastructure, network configuration, and software systems</li>
+            <li>Developed and maintained the school's web presence</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KEY PROJECTS -->
+      <div class="section">
+        <div class="section-title">Key Projects</div>
+
+        <div class="project-item">
+          <div class="project-name">Newpal ERP Platform &nbsp;<a href="https://erp-newpal.com">↗ erp-newpal.com</a></div>
+          <div class="project-desc">End-to-end enterprise ERP system built solo as lead architect. 10+ integrated modules covering every department of a manufacturing operation — procurement, finance, inventory, production, QA, dispatch, sales, weighbridge, and gate. Real-time dashboards, RBAC, automated reporting.</div>
+          <div class="project-tech">React · Redux · Node.js · Express · MongoDB · Socket.IO · Docker · JWT</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-name">PamProperty — Real Estate Platform &nbsp;<a href="https://pamproperty.com">↗ pamproperty.com</a></div>
+          <div class="project-desc">Full-stack real estate web and mobile app with escrow-protected transactions, real-time buyer-agent chat, KYC verification, wallet system, and property listings (land, rental, hotel). Android APK available for download.</div>
+          <div class="project-tech">React · React Native · Node.js · MongoDB · Socket.IO · Redux · Cloudinary</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-name">SmartStrategy — AI Crypto Trading Platform &nbsp;<a href="https://smartstrategy.vercel.app">↗ Live</a></div>
+          <div class="project-desc">AI-powered trading platform combining real-time signal engine (RSI, EMA, MACD), automated trading bots, multi-exchange arbitrage scanner, demo mode, and premium subscription billing via crypto payments.</div>
+          <div class="project-tech">React · TensorFlow.js · Node.js · MongoDB · CCXT · Socket.IO</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-name">ExpertHub Workspace &nbsp;<a href="https://workspace.experthubllc.com">↗ workspace.experthubllc.com</a></div>
+          <div class="project-desc">Professional workspace booking and expert learning platform with smart reservation system, membership tiers, expert-led training programmes, and integrated payment via Flutterwave.</div>
+          <div class="project-tech">Next.js · TypeScript · Node.js · MongoDB · Flutterwave · Socket.IO</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-name">Mobile Doctor App &nbsp;<a href="https://mobiledoctorapp.com">↗ mobiledoctorapp.com</a></div>
+          <div class="project-desc">Telemedicine mobile app with doctor consultations, appointment booking, medical records, and real-time chat. Cross-platform (iOS/Android) with secure payment processing.</div>
+          <div class="project-tech">React Native · Node.js · Express · MongoDB · Socket.IO</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDE COLUMN -->
+    <div class="side-col">
+
+      <!-- CONTACT -->
+      <div class="side-section">
+        <div class="side-title">Contact</div>
+        <div class="contact-row"><span class="contact-icon">✉</span><a href="mailto:princeleelabari@gmail.com">princeleelabari@gmail.com</a></div>
+        <div class="contact-row"><span class="contact-icon">☎</span>+44 7393 178572</div>
+        <div class="contact-row"><span class="contact-icon">☎</span>+234 803 542 1019</div>
+        <div class="contact-row"><span class="contact-icon">in</span><a href="https://www.linkedin.com/in/amazingprincenna">amazingprincenna</a></div>
+        <div class="contact-row"><span class="contact-icon">⌥</span><a href="https://github.com/amazingprincelee">amazingprincelee</a></div>
+        <div class="contact-row"><span class="contact-icon">⚑</span><a href="https://www.upwork.com/freelancers/~01f5e085fce3ca17bd">Upwork Profile</a></div>
+        <div class="contact-row"><span class="contact-icon">◉</span>32 Blythe Hill, Orpington, Kent, UK</div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="side-section">
+        <div class="side-title">Technical Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-label">Languages</div>
+          <div class="tag-list">
+            <span class="tag">JavaScript ES6+</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Frontend &amp; Mobile</div>
+          <div class="tag-list">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Redux Toolkit</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Backend</div>
+          <div class="tag-list">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Socket.IO</span>
+            <span class="tag">JWT / RBAC</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Databases</div>
+          <div class="tag-list">
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">DevOps &amp; Tools</div>
+          <div class="tag-list">
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Architecture</div>
+          <div class="tag-list">
+            <span class="tag">ERP Design</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">API Design</span>
+            <span class="tag">Agile / SDLC</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Blockchain</div>
+          <div class="tag-list">
+            <span class="tag">Solidity</span>
+            <span class="tag">Smart Contracts</span>
+            <span class="tag">DApps</span>
+            <span class="tag">Web3.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="side-section">
+        <div class="side-title">Education</div>
+
+        <div class="edu-item">
+          <div class="edu-degree">B.Eng Electronics &amp; Control Systems</div>
+          <div class="edu-school">Liverpool John Moores University, UK</div>
+          <div class="edu-year">2013</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Advanced Diploma, Electrical &amp; Electronics Engineering</div>
+          <div class="edu-school">Institut Megatech, Malaysia</div>
+          <div class="edu-year">2009</div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="side-section">
+        <div class="side-title">Certifications</div>
+        <div class="cert-item">NSQ Level 3 – Backend Web Development (CPN Nigeria)</div>
+        <div class="cert-item">NSQ Level 3 – Frontend Web Development (CPN Nigeria)</div>
+        <div class="cert-item">Web Development &amp; Web3 – London App Brewery</div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="side-section">
+        <div class="side-title">Leadership &amp; Soft Skills</div>
+        <div class="tag-list">
+          <span class="tag">Team Leadership</span>
+          <span class="tag">Mentorship</span>
+          <span class="tag">Stakeholder Comms</span>
+          <span class="tag">Staff Training</span>
+          <span class="tag">Project Management</span>
+          <span class="tag">System Architecture</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -69,7 +69,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
           </Col>
           <Col lg="6" className="text-center text-lg-right">
             <div className="d-flex justify-content-center justify-content-lg-end">
-              <a href="mailto:contact@princelee.pro" className="text-white mx-3 text-decoration-none hover-lift">
+              <a href="mailto:princeleelabari@gmail.com" className="text-white mx-3 text-decoration-none hover-lift">
                 <i className="ni ni-email-83 mr-2"></i>Contact
               </a>
               <a href="https://calendly.com/princelee" className="text-white mx-3 text-decoration-none hover-lift">

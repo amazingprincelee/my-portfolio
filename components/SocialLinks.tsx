@@ -1,93 +1,105 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import { socialLinks } from '../portfolio';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaFacebookSquare,
+  FaTwitter,
+  FaYoutube,
+  FaTiktok,
+  FaBriefcase,
+  FaGlobe,
+} from 'react-icons/fa';
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const Icon = ({ icon: Ic }: { icon: any }) => <span style={{ display: 'flex' }}><Ic style={{ fontSize: '1.3rem' }} /></span>;
+
+
+const btnStyle: React.CSSProperties = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '42px',
+  height: '42px',
+  borderRadius: '50%',
+  margin: '0 4px',
+  color: '#ffffff',
+  transition: 'transform 0.2s, opacity 0.2s',
+  textDecoration: 'none',
+};
+
+const SocialLink = ({
+  href,
+  label,
+  bg,
+  children,
+}: {
+  href: string;
+  label: string;
+  bg: string;
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={label}
+    style={{ ...btnStyle, background: bg }}
+    onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.85')}
+    onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
+  >
+    {children}
+  </a>
+);
 
 const SocialLinks = () => {
   return (
-    <div className="btn-wrapper text-lg">
-      {socialLinks.url && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="white"
-          rel="noopener"
-          aria-label="URL"
-          href={socialLinks.url}
-          target="_blank"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-link" />
-          </span>
-        </Button>
-      )}
+    <div className="btn-wrapper text-lg" style={{ display: 'flex', flexWrap: 'wrap', gap: '2px' }}>
       {socialLinks.linkedin && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="twitter"
-          rel="noopener"
-          aria-label="Linkedin"
-          href={socialLinks.linkedin}
-          target="_blank"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-linkedin" />
-          </span>
-        </Button>
+        <SocialLink href={socialLinks.linkedin} label="LinkedIn" bg="#0077b5">
+          <Icon icon={FaLinkedin} />
+        </SocialLink>
+      )}
+      {socialLinks.upwork && (
+        <SocialLink href={socialLinks.upwork} label="Upwork" bg="#6fda44">
+          <Icon icon={FaBriefcase} />
+        </SocialLink>
       )}
       {socialLinks.github && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="github"
-          href={socialLinks.github}
-          rel="noopener"
-          aria-label="Github"
-          target="_blank"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-github" />
-          </span>
-        </Button>
-      )}
-      {socialLinks.instagram && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="instagram"
-          href={socialLinks.instagram}
-          target="_blank"
-          rel="noopener"
-          aria-label="Instagram"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-instagram" />
-          </span>
-        </Button>
-      )}
-      {socialLinks.facebook && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="facebook"
-          href={socialLinks.facebook}
-          target="_blank"
-          rel="noopener"
-          aria-label="Facebook"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-facebook-square" />
-          </span>
-        </Button>
+        <SocialLink href={socialLinks.github} label="GitHub" bg="#333333">
+          <Icon icon={FaGithub} />
+        </SocialLink>
       )}
       {socialLinks.twitter && (
-        <Button
-          className="btn-icon-only rounded-circle"
-          color="twitter"
-          href={socialLinks.twitter}
-          target="_blank"
-          rel="noopener"
-          aria-label="Twitter"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-twitter" />
-          </span>
-        </Button>
+        <SocialLink href={socialLinks.twitter} label="Twitter / X" bg="#1da1f2">
+          <Icon icon={FaTwitter} />
+        </SocialLink>
+      )}
+      {socialLinks.instagram && (
+        <SocialLink href={socialLinks.instagram} label="Instagram" bg="linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)">
+          <Icon icon={FaInstagram} />
+        </SocialLink>
+      )}
+      {socialLinks.facebook && (
+        <SocialLink href={socialLinks.facebook} label="Facebook" bg="#1877f2">
+          <Icon icon={FaFacebookSquare} />
+        </SocialLink>
+      )}
+      {socialLinks.youtube && (
+        <SocialLink href={socialLinks.youtube} label="YouTube" bg="#ff0000">
+          <Icon icon={FaYoutube} />
+        </SocialLink>
+      )}
+      {socialLinks.tiktok && (
+        <SocialLink href={socialLinks.tiktok} label="TikTok" bg="#010101">
+          <Icon icon={FaTiktok} />
+        </SocialLink>
+      )}
+      {socialLinks.url && (
+        <SocialLink href={socialLinks.url} label="Website" bg="#008751">
+          <Icon icon={FaGlobe} />
+        </SocialLink>
       )}
     </div>
   );

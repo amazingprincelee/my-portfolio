@@ -154,7 +154,18 @@ export const ContactUs = () => {
                 contact me through the form on the left or you can WhatsApp me.
               </p>
               <p>
-                <strong>WhatsApp:</strong> +234 803 542 1019
+                <strong>WhatsApp / Call:</strong>{' '}
+                <a href="tel:+2348035421019">+234 803 542 1019</a>
+              </p>
+              <p>
+                <strong>Email:</strong>{' '}
+                <a href="mailto:princeleelabari@gmail.com">princeleelabari@gmail.com</a>
+              </p>
+              <p>
+                <strong>Facebook:</strong>{' '}
+                <a href="https://web.facebook.com/amazingprincelee" target="_blank" rel="noopener noreferrer">
+                  facebook.com/amazingprincelee
+                </a>
               </p>
             </div>
           </Col>
